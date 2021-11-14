@@ -2,7 +2,7 @@
   <div class="bg">
     <div class="gloss">
       <Gloss></Gloss>
-      <div id="mainContainer">
+      <div class="mainContainer">
         <Footer></Footer>
       </div>
     </div>
@@ -29,13 +29,7 @@ export default {
     width: 100%;
     background-color:rgb(158, 122, 122);
     position: absolute;
-    filter: blur(0.7px); // 背景高斯模糊
-    // z-index: -9; //暂时注释,影响调试
-  }
-  #mainContainer {
-    position: relative;
-    width: 960px;
-    height: 100%;
-    margin: 0 auto;
+    filter: blur(2px); // 背景高斯模糊
+    z-index: -9;
   }
 </style>

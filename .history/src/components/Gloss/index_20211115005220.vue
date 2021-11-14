@@ -15,6 +15,6 @@ export default {
     width: 100%;
     height: 478px;
     background: url('../../assets/gloss.png') repeat-x;
-    // z-index: -8;  //暂时注释,影响调试
+    z-index: -8;
 }
 </style>
