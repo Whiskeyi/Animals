@@ -1,20 +1,17 @@
 <template>
   <div class="home">
-    <div class="gloss">
-      <Gloss></Gloss>
-    </div>
+    <div class="content"></div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 // 组件引入
-import Gloss from '@/components/Gloss'
 
 export default {
   name: 'home',
   components: {
-    Gloss
+
   }
 }
 </script>

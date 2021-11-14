@@ -9,7 +9,7 @@
 <script>
 // @ is an alias to /src
 // 组件引入
-import Gloss from '@/components/Gloss'
+import Gloss from '@/components/Gloss/index'
 
 export default {
   name: 'home',
