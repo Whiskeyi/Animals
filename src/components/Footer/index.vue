@@ -1,7 +1,6 @@
 <template>
   <div class="footerContainer">
       <p>Copyright © 2020 阿里巴巴前端练习生计划 SteinsGate</p>
-      <p>我的修改</p>
   </div>
 </template>
 
