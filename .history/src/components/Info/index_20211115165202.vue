@@ -11,10 +11,10 @@ export default {
 
 <style lang="scss" scoped>
     .infoContainer {
-        float: left;
+        position: fixed;
         z-index: 10000;
         width: 400px;
-        height: 640px;
+        height: 560px;
         margin: 26px 0 0 16px;
         background-color: #fff;
     }

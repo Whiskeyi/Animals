@@ -14,7 +14,7 @@ export default {
         float: left;
         z-index: 10000;
         width: 400px;
-        height: 640px;
+        height: 560px;
         margin: 26px 0 0 16px;
         background-color: #fff;
     }

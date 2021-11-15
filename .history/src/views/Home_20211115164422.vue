@@ -2,10 +2,8 @@
   <div class="bg">
     <div class="gloss">
       <Gloss></Gloss>
-      <div id="rightContainer">
-        <Info></Info>
-        <RightNav></RightNav>
-        <Footer></Footer>
+      <div id="mainContainer">
+        <Info></Info><Footer></Footer>
       </div>
     </div>
   </div>
@@ -17,12 +15,11 @@
 import Gloss from '@/components/Gloss'
 import Footer from '@/components/Footer'
 import Info from '@/components/Info'
-import RightNav from '@/components/RightNav'
 
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info,RightNav
+    Gloss,Footer,Info
   }
 }
 </script>
@@ -37,10 +34,10 @@ export default {
     filter: blur(0.5px); // 背景高斯模糊
     // z-index: -9; //暂时注释,影响调试
   }
-  #rightContainer {
-    position: fixed;
+  #mainContainer {
+    position: fix;
     right: 10%;
-    width: 640px;
+    width: 960px;
     height: 100%;
     margin: 0 auto;
     color: #fff;

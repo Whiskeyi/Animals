@@ -15,8 +15,8 @@ export default {
     .footerContainer {
         position: fixed;
         bottom: 0;
+        right: 10%;
         font-size: 1rem;
         color:#fff;
-        margin-left: 16px;
     }
 </style>

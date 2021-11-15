@@ -3,9 +3,7 @@
     <div class="gloss">
       <Gloss></Gloss>
       <div id="rightContainer">
-        <Info></Info>
-        <RightNav></RightNav>
-        <Footer></Footer>
+        <Info></Info><Footer></Footer>
       </div>
     </div>
   </div>
@@ -17,12 +15,11 @@
 import Gloss from '@/components/Gloss'
 import Footer from '@/components/Footer'
 import Info from '@/components/Info'
-import RightNav from '@/components/RightNav'
 
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info,RightNav
+    Gloss,Footer,Info
   }
 }
 </script>
