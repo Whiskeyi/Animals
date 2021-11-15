@@ -132,9 +132,9 @@ export default {
 }
  @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
   .leftContainer .logo {
-    height: 80px;
-    width: 80px;
-    padding: 15px 0;
+    height: 70px;
+    width: 70px;
+    padding: 10px 0;
   }
  }
 </style>

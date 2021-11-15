@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <!-- 背景+光泽效果 -->
     <div class="bg">
       <Gloss></Gloss>
@@ -42,7 +42,8 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  // 滚动条样式修改（待定）
+    overflow: hidden;
+  // 浏览器滚动条隐藏
 }
 .bg {
   height: 100%;
@@ -56,31 +57,35 @@ export default {
 #leftContainer {
   position: absolute;
   left: 10%;
-  width: 30%;
+  width: 40%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 #rightContainer {
   position: fixed;
   right: 10%;
-  width: 50%;
+  width: 40%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
   #leftContainer {
   position: absolute;
   left: 5%;
-  width: 36%;
+  width: 45%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 #rightContainer {
   position: fixed;
   right: 5%;
-  width: 54%;
+  width: 45%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 }
 </style>

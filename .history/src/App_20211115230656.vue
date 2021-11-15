@@ -19,5 +19,4 @@ html, body {  // 去除白边
     padding: 0;
     position: relative;
 }
-
 </style>

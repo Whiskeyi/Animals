@@ -18,6 +18,6 @@ html, body {  // 去除白边
     margin: 0;
     padding: 0;
     position: relative;
+    overflow-y:hidden;
 }
-
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="infoContainer">
-
+    
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 .infoContainer {
     float: left;
     z-index: 10000;
-    width: 82%;
+    width: 70%;
     height: 80%;
     margin: 26px 0 0 16px;
     background-color: #fff;
@@ -26,7 +26,7 @@ export default {
   .infoContainer {
     float: left;
     z-index: 10000;
-    width: 75%;
+    width: 65%;
     height: 80%;
     margin: 26px 0 0 16px;
     background-color: #fff;

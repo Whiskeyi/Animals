@@ -56,14 +56,14 @@ export default {
 #leftContainer {
   position: absolute;
   left: 10%;
-  width: 30%;
+  width: 32%;
   height: 100%;
   margin: 0 auto;
 }
 #rightContainer {
   position: fixed;
   right: 10%;
-  width: 50%;
+  width: 48%;
   height: 100%;
   margin: 0 auto;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <!-- 背景+光泽效果 -->
     <div class="bg">
       <Gloss></Gloss>
@@ -42,7 +42,21 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  // 滚动条样式修改（待定）
+  .orgs-container::-webkit-scrollbar {    /*滚动条整体样式*/
+        width: 10px;                        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+    .orgs-container::-webkit-scrollbar-thumb {  /*滚动条里面小方块*/
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #ebebeb;
+    }
+    .orgs-container::-webkit-scrollbar-track {  /*滚动条里面轨道*/
+        /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+        border-radius: 10px;
+        background: #fff;
+    }
+  // 浏览器滚动条隐藏
 }
 .bg {
   height: 100%;
@@ -56,31 +70,35 @@ export default {
 #leftContainer {
   position: absolute;
   left: 10%;
-  width: 30%;
+  width: 40%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 #rightContainer {
   position: fixed;
   right: 10%;
-  width: 50%;
+  width: 40%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
   #leftContainer {
   position: absolute;
   left: 5%;
-  width: 36%;
+  width: 45%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 #rightContainer {
   position: fixed;
   right: 5%;
-  width: 54%;
+  width: 45%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 }
 </style>

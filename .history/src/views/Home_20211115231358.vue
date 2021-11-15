@@ -56,14 +56,15 @@ export default {
 #leftContainer {
   position: absolute;
   left: 10%;
-  width: 30%;
+  width: 40%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 #rightContainer {
   position: fixed;
   right: 10%;
-  width: 50%;
+  width: 40%;
   height: 100%;
   margin: 0 auto;
 }
@@ -71,16 +72,18 @@ export default {
   #leftContainer {
   position: absolute;
   left: 5%;
-  width: 36%;
+  width: 45%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 #rightContainer {
   position: fixed;
   right: 5%;
-  width: 54%;
+  width: 45%;
   height: 100%;
   margin: 0 auto;
+  background-color: #531435;
 }
 }
 </style>
