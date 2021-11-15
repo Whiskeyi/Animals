@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  // 浏览器滚动条隐藏
+  -webkit-scrollbar:
 }
 .bg {
   height: 100%;

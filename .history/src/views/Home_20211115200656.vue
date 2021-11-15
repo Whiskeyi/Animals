@@ -41,9 +41,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-  // 浏览器滚动条隐藏
-}
 .bg {
   height: 100%;
   width: 100%;
