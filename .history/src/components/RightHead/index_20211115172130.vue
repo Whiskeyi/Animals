@@ -12,15 +12,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.rightHeadContainer {
-    float: left;
-    height: 400px;
-    width: 100px;
-    margin: 26px 0 0 16px;
-}
-.vertical {
-    writing-mode: vertical-lr;
-    padding-left: 5px;
-    color: #fff;
-}
+    .rightHeadContainer {
+        float: left;
+        height: 400px;
+        width: 100px;
+        margin: 26px 0 0 16px;
+    }
+    .vertical {
+        writing-mode: vertical-lr;
+        padding-left: 5px;
+        color: #fff;
+    }
 </style>
