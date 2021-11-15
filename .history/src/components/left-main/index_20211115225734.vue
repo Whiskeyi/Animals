@@ -126,8 +126,8 @@ export default {
   text-align: center;
 }
 .leftContainer .logo {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   padding: 20px 0;
 }
  @media screen and (max-width: 1440px) { // 屏幕小于1440px样式

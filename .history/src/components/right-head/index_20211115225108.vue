@@ -23,17 +23,17 @@ export default {
     padding-left: 5px;
     color: #fff;
 }
-@media screen and (max-width: 1440px) { // 屏幕小于1440px样式
+@media screen and (max-width: 1024px) { // 屏幕小于1024px样式
     .rightHeadContainer {
-        float: left;
-        height: 400px;
-        width:85px;
-        margin: 26px 0 0 0;
+    float: left;
+    height: 400px;
+    width: 70px;
+    margin: 26px 0 0 5px;
     }
     .vertical {
-        writing-mode: vertical-lr;
-        padding-right: 0;
-        color: #fff;
+    writing-mode: vertical-lr;
+    padding-left: 2px;
+    color: #fff;
     }
 }
 </style>

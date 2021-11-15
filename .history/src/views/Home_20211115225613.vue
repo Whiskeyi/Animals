@@ -55,7 +55,7 @@ export default {
 }
 #leftContainer {
   position: absolute;
-  left: 10%;
+  left: 5%;
   width: 40%;
   height: 100%;
   margin: 0 auto;
@@ -69,7 +69,7 @@ export default {
   margin: 0 auto;
   background-color: #531435;
 }
-@media screen and (max-width: 1440px) { // 屏幕小于1440px样式
+@media screen and (max-width: 1024px) { // 屏幕小于1024px样式
   #leftContainer {
   position: absolute;
   left: 5%;

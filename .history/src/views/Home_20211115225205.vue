@@ -69,22 +69,7 @@ export default {
   margin: 0 auto;
   background-color: #531435;
 }
-@media screen and (max-width: 1440px) { // 屏幕小于1440px样式
-  #leftContainer {
-  position: absolute;
-  left: 5%;
-  width: 45%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #531435;
-}
-#rightContainer {
-  position: fixed;
-  right: 5%;
-  width: 45%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #531435;
-}
+@media screen and (max-width: 1024px) { // 屏幕小于1024px样式
+  
 }
 </style>

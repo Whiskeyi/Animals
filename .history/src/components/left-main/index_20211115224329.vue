@@ -126,15 +126,15 @@ export default {
   text-align: center;
 }
 .leftContainer .logo {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   padding: 20px 0;
 }
- @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
-  .leftContainer .logo {
-    height: 70px;
-    width: 70px;
-    padding: 10px 0;
-  }
+ @media screen and (max-width: 1024px) { // 屏幕小于768px样式
+ .leftContainer .logo {
+   height: 40px;
+   width: 40px;
+   padding: 10px 0;
+ }
  }
 </style>
