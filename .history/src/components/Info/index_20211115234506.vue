@@ -1,21 +1,17 @@
 <template>
   <div class="infoContainer">
-    <div class="infPadding">
-    <Introduce></Introduce>
-    <HabbitVoice></HabbitVoice>
-    <IntroduceBottom></IntroduceBottom>
-    </div>
+
   </div>
 </template>
 
 <script>
 import Introduce from './Introduce'
-import HabbitVoice from './habbit-voice'
-import IntroduceBottom from './introduce-bottom'
+import habbitVoice from './habbit-voice'
+import introduceBottom from './introduce-bottom'
 export default {
   name: 'Info',
   components: {
-    Introduce, HabbitVoice, IntroduceBottom
+    Introduce, habbitVoice, introduceBottom
   }
 }
 </script>
@@ -27,12 +23,7 @@ export default {
     width: 82%;
     height: 80%;
     margin: 26px 0 0 16px;
-    padding: 15px 0px;
     background-color: #fff;
-    color:#fff;
-}
-.infPadding {
-  padding: 0 50px;
 }
 .infoContainer logo {
     position: absolute;

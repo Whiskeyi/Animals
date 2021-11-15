@@ -1,10 +1,8 @@
 <template>
   <div class="infoContainer">
-    <div class="infPadding">
     <Introduce></Introduce>
     <HabbitVoice></HabbitVoice>
     <IntroduceBottom></IntroduceBottom>
-    </div>
   </div>
 </template>
 
@@ -30,9 +28,6 @@ export default {
     padding: 15px 0px;
     background-color: #fff;
     color:#fff;
-}
-.infPadding {
-  padding: 0 50px;
 }
 .infoContainer logo {
     position: absolute;
