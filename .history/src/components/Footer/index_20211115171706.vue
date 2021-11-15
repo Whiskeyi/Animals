@@ -17,6 +17,6 @@ export default {
         bottom: 0;
         font-size: 1rem;
         color:#fff;
-        margin:0 0 20px 16px;
+        margin:0 0 20px 16;;
     }
 </style>
