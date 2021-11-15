@@ -50,18 +50,18 @@ export default {
   filter: blur(0.5px); // 背景高斯模糊
   // z-index: -9; //暂时注释,影响调试
 }
-#leftContainer {
-  position: absolute;
-  left: 10%;
-  width: 40%;
+#rightContainer {
+  position: fixed;
+  right: 10%;
+  width: 640px;
   height: 100%;
   margin: 0 auto;
   background-color: #531435;
 }
-#rightContainer {
-  position: fixed;
-  right: 10%;
-  width: 40%;
+#leftContainer {
+  position: absolute;
+  left: 10%;
+  width: 640px;
   height: 100%;
   margin: 0 auto;
   background-color: #531435;

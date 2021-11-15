@@ -61,7 +61,7 @@ export default {
 #rightContainer {
   position: fixed;
   right: 10%;
-  width: 40%;
+  width: 640px;
   height: 100%;
   margin: 0 auto;
   background-color: #531435;
