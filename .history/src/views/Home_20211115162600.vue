@@ -3,7 +3,6 @@
     <div class="gloss">
       <Gloss></Gloss>
       <div id="mainContainer">
-        <Info></Info>
       </div>
       <Footer></Footer>
     </div>
@@ -15,12 +14,11 @@
 // 组件引入
 import Gloss from '@/components/Gloss'
 import Footer from '@/components/Footer'
-import Info from '@/components/Info'
 
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info
+    Gloss,Footer
   }
 }
 </script>
@@ -32,7 +30,7 @@ export default {
     background-color:rgb(158, 122, 122);
     position: absolute;
     transition: background-color 2s ease-in; // 背景颜色2S过渡
-    filter: blur(0.5px); // 背景高斯模糊
+    filter: blur(0.4px); // 背景高斯模糊
     // z-index: -9; //暂时注释,影响调试
   }
   #mainContainer {

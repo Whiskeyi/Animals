@@ -3,7 +3,6 @@
     <div class="gloss">
       <Gloss></Gloss>
       <div id="mainContainer">
-        <Info></Info>
       </div>
       <Footer></Footer>
     </div>
@@ -15,12 +14,11 @@
 // 组件引入
 import Gloss from '@/components/Gloss'
 import Footer from '@/components/Footer'
-import Info from '@/components/Info'
 
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info
+    Gloss,Footer
   }
 }
 </script>

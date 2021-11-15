@@ -16,7 +16,6 @@ export default {
         position: fixed;
         bottom: 0;
         right: 15px;
-        font-size: 0.8rem;
-        color:#fff;
+        font-size: 16px;
     }
 </style>

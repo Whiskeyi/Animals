@@ -3,9 +3,8 @@
     <div class="gloss">
       <Gloss></Gloss>
       <div id="mainContainer">
-        <Info></Info>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
     </div>
   </div>
 </template>
@@ -15,12 +14,11 @@
 // 组件引入
 import Gloss from '@/components/Gloss'
 import Footer from '@/components/Footer'
-import Info from '@/components/Info'
 
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info
+    Gloss,Footer
   }
 }
 </script>
@@ -38,9 +36,10 @@ export default {
   #mainContainer {
     position: relative;
     width: 960px;
-    height: 100%;
+    height: 100px;
     margin: 0 auto;
     color: #fff;
     background-color: #531435;
+    z-index: 1;
   }
 </style>

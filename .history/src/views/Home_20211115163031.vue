@@ -3,7 +3,6 @@
     <div class="gloss">
       <Gloss></Gloss>
       <div id="mainContainer">
-        <Info></Info>
       </div>
       <Footer></Footer>
     </div>
@@ -20,7 +19,7 @@ import Info from '@/components/Info'
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info
+    Gloss,Footer,info
   }
 }
 </script>
