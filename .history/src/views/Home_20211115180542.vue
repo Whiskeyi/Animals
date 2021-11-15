@@ -50,7 +50,7 @@ export default {
   background-color: #531435;
 }
 #leftContainer {
-  position: absolute;
+  position: relative;
   left: 10%;
   width: 640px;
   height: 100%;

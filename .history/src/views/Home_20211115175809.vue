@@ -2,10 +2,9 @@
   <div class="bg">
     <div class="gloss">
       <Gloss></Gloss>
-      <div id="leftContainer">
-        <LeftMain></LeftMain>
-      </div>
+      <div id="leftContainer"></div>
       <div id="rightContainer">
+        <LeftMain></LeftMain>
         <Info></Info>
         <RightHead></RightHead>
         <Footer></Footer>
@@ -50,7 +49,7 @@ export default {
   background-color: #531435;
 }
 #leftContainer {
-  position: absolute;
+  position: relative;
   left: 10%;
   width: 640px;
   height: 100%;

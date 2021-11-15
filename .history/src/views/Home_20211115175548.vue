@@ -2,10 +2,9 @@
   <div class="bg">
     <div class="gloss">
       <Gloss></Gloss>
-      <div id="leftContainer">
-        <LeftMain></LeftMain>
-      </div>
+      <div id="leftContainer"></div>
       <div id="rightContainer">
+        <LeftMain></LeftMain>
         <Info></Info>
         <RightHead></RightHead>
         <Footer></Footer>
@@ -43,7 +42,7 @@ export default {
 }
 #rightContainer {
   position: fixed;
-  right: 10%;
+  right: 15%;
   width: 640px;
   height: 100%;
   margin: 0 auto;
@@ -51,7 +50,7 @@ export default {
 }
 #leftContainer {
   position: absolute;
-  left: 10%;
+  left: 15%;
   width: 640px;
   height: 100%;
   margin: 0 auto;
