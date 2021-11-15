@@ -1,23 +1,14 @@
 <template>
-  <div id="home">
-    <!-- 背景+光泽效果 -->
-    <div class="bg">
+  <div class="bg">
+    <div class="gloss">
       <Gloss></Gloss>
-    </div>
-    <!-- 页面容器 -->
-    <div class="container">
-      <!-- 左侧展示模块 -->
       <div id="leftContainer">
         <LeftMain></LeftMain>
       </div>
-      <!-- 右侧展示模块 -->
       <div id="rightContainer">
-        <!-- 输出信息 -->
-          <Info></Info>
-          <!-- 右侧标题 -->
-          <RightHead></RightHead>
-          <!-- 尾部 -->
-          <Footer></Footer>
+        <Info></Info>
+        <RightHead></RightHead>
+        <Footer></Footer>
       </div>
     </div>
   </div>
@@ -39,13 +30,13 @@ export default {
   }
 }
 </script>
-
+  
 <style lang="scss" scoped>
 .bg {
   height: 100%;
   width: 100%;
   background-color:rgb(158, 122, 122);
-  position: fixed;
+  position: absolute;
   transition: background-color 2s ease-in; // 背景颜色2S过渡
   filter: blur(0.5px); // 背景高斯模糊
   // z-index: -9; //暂时注释,影响调试
@@ -59,7 +50,7 @@ export default {
   background-color: #531435;
 }
 #leftContainer {
-  position: absolute;
+  position: relative;
   left: 10%;
   width: 640px;
   height: 100%;

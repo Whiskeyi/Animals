@@ -1,22 +1,15 @@
 <template>
   <div id="home">
-    <!-- 背景+光泽效果 -->
     <div class="bg">
       <Gloss></Gloss>
     </div>
-    <!-- 页面容器 -->
     <div class="container">
-      <!-- 左侧展示模块 -->
       <div id="leftContainer">
         <LeftMain></LeftMain>
       </div>
-      <!-- 右侧展示模块 -->
       <div id="rightContainer">
-        <!-- 输出信息 -->
           <Info></Info>
-          <!-- 右侧标题 -->
           <RightHead></RightHead>
-          <!-- 尾部 -->
           <Footer></Footer>
       </div>
     </div>
