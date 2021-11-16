@@ -34,7 +34,7 @@ export default {
     color:#fff;
 }
 .infPadding {
-  padding: 0 0 0 50px;
+  padding: 0 50px;
 }
 .infoContainer logo {
     position: absolute;

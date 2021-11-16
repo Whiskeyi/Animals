@@ -37,7 +37,7 @@ export default {
   components: {
     Gloss,Footer,Info,RightHead,LeftMain
   },
-  beforeUpdate() {
+  beforeupdated() {
     setInterval(function() {
       let arrColor = ["#FC9F4D", "#E98B2A", "#90B44B", "#4D5139", "#1C1C1C", "#4F4F48",
                       "#FF5E99", "#828282", "#52433D", "#947A6D", "#080808", "#0C0C0C",
@@ -45,8 +45,7 @@ export default {
                       "#BDC0BA", "#BDC0BA", "#BDC0BA", "#434343","#BDC0BA", "#BDC0BA"]
       let color = Math.floor(Math.random() * arrColor.length) - 1
       document.getElementsByClassName('bg').style.backgroundColor = color
-      window.console.log(document.getElementsByClassName('bg').style.backgroundColor)
-    }, 3000);
+    }, 5000);
   }
 }
 </script>

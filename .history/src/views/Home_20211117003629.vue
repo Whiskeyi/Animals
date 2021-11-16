@@ -45,7 +45,6 @@ export default {
                       "#BDC0BA", "#BDC0BA", "#BDC0BA", "#434343","#BDC0BA", "#BDC0BA"]
       let color = Math.floor(Math.random() * arrColor.length) - 1
       document.getElementsByClassName('bg').style.backgroundColor = color
-      window.console.log(document.getElementsByClassName('bg').style.backgroundColor)
     }, 3000);
   }
 }

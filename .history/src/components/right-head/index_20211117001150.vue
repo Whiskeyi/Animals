@@ -24,7 +24,7 @@ export default {
     color: #fff;
 }
 .logo {
-    width: 90px;
+    width: 100px;
     padding-bottom: 20px;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式

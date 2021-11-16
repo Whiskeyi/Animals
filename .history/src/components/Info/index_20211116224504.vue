@@ -1,11 +1,11 @@
 <template>
   <div class="infoContainer">
     <div class="infPadding">
-      <!-- 标题、声音icon -->
+      <!-- 简介、图标 -->
     <Introduce></Introduce>
-    <!-- 简介 -->
+    <!-- 底部介绍 -->
     <IntroduceMid></IntroduceMid>
-    <!-- 捕食、诗 -->
+    <!-- 捕食、声音icon -->
     <HabbitPoem></HabbitPoem>
     </div>
   </div>
@@ -34,7 +34,7 @@ export default {
     color:#fff;
 }
 .infPadding {
-  padding: 0 0 0 50px;
+  padding: 0 50px;
 }
 .infoContainer logo {
     position: absolute;
