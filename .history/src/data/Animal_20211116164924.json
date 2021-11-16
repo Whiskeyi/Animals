@@ -1,8 +1,8 @@
 {
-
-    "AnimalDetail" :
+    
+    "AnimalDetail" : 
     [
-        {
+        {   
             "enName": "chicken",
             "name": "鸡",
             "color": "#FC9F4D",
@@ -27,7 +27,7 @@
             "poetryAuthor": "宋 · 释绍昙",
             "poetryContent": "猛虎不怯敌，烈士无虚言。 怯敌辱其班，虚言负其恩。"
         },
-
+        
         {
             "enName": "frog",
             "name": "蛙",
