@@ -13,7 +13,7 @@
                 <p class="enemyTitle">天敌：</p>
                 <div class="enemy">大型肉食性动物如蟒蛇、老虎、狮子以及野狸子等</div> -->
             </el-col>
-            <el-col :span="11">
+            <el-col :lg="16" hidden-sm-and-down>
                 <div class="IntTitle">简介：</div>
                 <div class="IntContent">猫科动物，分家猫、野猫，是全世界家庭中较为广泛的宠物。家猫的祖先据推测是起源于古埃及的沙漠猫，波斯的波斯猫，已经被人类驯化了3500年。</div>
             </el-col>
@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .fooBottom {
-    // background-color: rgb(253, 128, 128);
+    background-color: rgb(253, 128, 128);
     height: 50%;
     width: 100%;
 }
@@ -53,5 +53,21 @@ export default {
 .IntContent {
     font-size: 22px;
     line-height: 40px;
+}
+@media screen and (max-width: 1440px) { // 屏幕小于1440px样式
+    .poem {
+        writing-mode: vertical-lr;
+        font-size: 22px;
+        .poemTitle {
+            font-weight: bold;
+        }
+        .content {
+            letter-spacing: 10px;
+        }
+    }
+    .IntContent {
+        font-size: 22px;
+        line-height: 32px;
+    }
 }
 </style>
