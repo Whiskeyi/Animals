@@ -36,13 +36,13 @@ export default {
   name: 'home',
   data() {
     return {
-      color: 'rgb(158, 122, 122)'
+      color: '#E98B2A'
     }
   },
   components: {
     Gloss,Footer,Info,RightHead,LeftMain
   },
-  updated() {
+  created() {
     setInterval(function() {
       let arrColor = ["#FC9F4D", "#E98B2A", "#90B44B", "#4D5139", "#1C1C1C", "#4F4F48",
                       "#FF5E99", "#828282", "#52433D", "#947A6D", "#080808", "#0C0C0C",
@@ -60,8 +60,9 @@ export default {
   height: 100%;
   width: 100%;
   position: fixed;
-  // transition: background-color 2s ease-in; // 背景颜色2S过渡
+  transition: background-color 2s ease-in; // 背景颜色2S过渡
   filter: blur(0.5px); // 背景高斯模糊
+  background-color: rgb(158, 122, 122);
   // z-index: -9; //暂时注释,影响调试
 }
 #leftContainer {
