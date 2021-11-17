@@ -56,11 +56,9 @@ export default {
 }
 #title {
     font-size: 72px;
-    display: block;
 }
 #subTitle {
     font-size: 44px;
-    display: block;
 }
 .logo {
     padding-top: 60px;

@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <!-- 背景+光泽效果 -->
-    <Gloss></Gloss>
+    <!-- <div class="bg" :style="{ backgroundColor : color }"> -->
+      <Gloss></Gloss>
+    <!-- </div> -->
     <!-- 页面容器 -->
     <div class="container">
       <!-- 左侧展示模块 -->
@@ -32,6 +34,11 @@ import LeftMain from '@/components/left-main'
 
 export default {
   name: 'home',
+  data() {
+    return {
+      color: 'rgb(158, 122, 122)'
+    }
+  },
   components: {
     Gloss,Footer,Info,RightHead,LeftMain
   }

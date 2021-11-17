@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <!-- 背景+光泽效果 -->
-    <Gloss></Gloss>
+      <Gloss></Gloss>
+    <!-- </div> -->
     <!-- 页面容器 -->
     <div class="container">
       <!-- 左侧展示模块 -->

@@ -5,9 +5,9 @@
               <transition name="fade">
                 <div id="title">{{ name }}</div>
               </transition>
-              <transition name="fade">
+              <!-- <transition name="fade">
                 <div id="subTitle">{{ enName }}</div>
-              </transition>
+              </transition> -->
           </el-col>
           <el-col :span="10">
               <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image>

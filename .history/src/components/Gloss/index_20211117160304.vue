@@ -7,8 +7,6 @@
 
 <script>
 const animalsData = require('@/data/Animals.json')
-import store from '../../store'
-
 export default {
     data() {
         return {
@@ -27,7 +25,7 @@ export default {
                 //                 "#434343", "#B19693", "#434343", "#EFBB24", "#90B44B", "#373C38",
                 //                 "#BDC0BA", "#BDC0BA", "#BDC0BA", "#434343","#BDC0BA", "#BDC0BA"]
                 let num = Math.floor(Math.random() * animalsData.AnimalsDetail.length)
-                store.commit('saveNum',num)
+                this.$store.commit('savaNum','123')
                 document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
                 // this.color = color
             }, 8000);

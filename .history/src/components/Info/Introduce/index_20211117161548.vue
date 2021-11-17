@@ -2,12 +2,8 @@
   <div class="introduce">
       <el-row class="intContainer">
           <el-col :span="6">
-              <transition name="fade">
-                <div id="title">{{ name }}</div>
-              </transition>
-              <transition name="fade">
-                <div id="subTitle">{{ enName }}</div>
-              </transition>
+              <div class="title">猫{{ name }}</div>
+              <div class="subTitle">Cat{{ enName }}</div>
           </el-col>
           <el-col :span="10">
               <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image>
@@ -22,23 +18,21 @@ import store from '../../../store'
 export default {
     data() {
         return {
-            name: '鸡',
-            enName: 'Chicken'
+            name: '',
+            enName: ''
         }
     },
     mounted() {
         this.changeInfo()
-        // window.console.log(store.state.num)
+        window.console.log(store.state.num)
     },
     methods: {
           changeInfo() {
             setInterval(function() {
                 this.name = animalsData.AnimalsDetail[store.state.num].name
-                document.getElementById('title').innerHTML = this.name
-                // window.console.log(this.name)
+                window.console.log(this.name)
                 this.enName = animalsData.AnimalsDetail[store.state.num].enName
-                document.getElementById('subTitle').innerHTML = this.enName
-                // window.console.log(this.enName)
+                window.console.log(this.enName)
             }, 8000);
         }
     }
@@ -54,26 +48,15 @@ export default {
 .intContainer {
     padding: 15px 0;
 }
-#title {
+.title {
     font-size: 72px;
-    display: block;
 }
-#subTitle {
+.subTitle {
     font-size: 44px;
-    display: block;
 }
 .logo {
     padding-top: 60px;
     height: 60px;
     width: 60px;
-}
-fade-enter {
-    opacity: 0;
-}
-fade-enter-to {
-    opacity: 1;
-}
-.fade-enter-active, .fade-leave-active {
-  transition: all 2.5s ease;
 }
 </style>

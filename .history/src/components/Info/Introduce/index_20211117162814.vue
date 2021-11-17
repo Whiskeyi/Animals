@@ -2,12 +2,8 @@
   <div class="introduce">
       <el-row class="intContainer">
           <el-col :span="6">
-              <transition name="fade">
-                <div id="title">{{ name }}</div>
-              </transition>
-              <transition name="fade">
-                <div id="subTitle">{{ enName }}</div>
-              </transition>
+              <div id="title">{{ name }}</div>
+              <div id="subTitle">{{ enName }}</div>
           </el-col>
           <el-col :span="10">
               <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image>
@@ -28,7 +24,7 @@ export default {
     },
     mounted() {
         this.changeInfo()
-        // window.console.log(store.state.num)
+        window.console.log(store.state.num)
     },
     methods: {
           changeInfo() {
@@ -56,24 +52,13 @@ export default {
 }
 #title {
     font-size: 72px;
-    display: block;
 }
 #subTitle {
     font-size: 44px;
-    display: block;
 }
 .logo {
     padding-top: 60px;
     height: 60px;
     width: 60px;
-}
-fade-enter {
-    opacity: 0;
-}
-fade-enter-to {
-    opacity: 1;
-}
-.fade-enter-active, .fade-leave-active {
-  transition: all 2.5s ease;
 }
 </style>

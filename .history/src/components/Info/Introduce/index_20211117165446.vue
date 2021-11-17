@@ -56,11 +56,9 @@ export default {
 }
 #title {
     font-size: 72px;
-    display: block;
 }
 #subTitle {
     font-size: 44px;
-    display: block;
 }
 .logo {
     padding-top: 60px;
@@ -74,6 +72,6 @@ fade-enter-to {
     opacity: 1;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: all 2.5s ease;
+  transition: opacity 2.5s ease-in;
 }
 </style>
