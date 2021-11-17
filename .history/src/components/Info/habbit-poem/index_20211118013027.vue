@@ -77,20 +77,20 @@ export default {
     height: 30%;
 }
 .habContent .habTil {
-    font-size: 1.2vw;
+    font-size: 1.25vw;
     font-weight: bold;
     line-height: 4.8vh;
 }
 .poem {
     // writing-mode: vertical-lr;
-    font-size: 1.1vw;
+    font-size: 1.15vw;
     line-height: 4.6vh;
     #poemTitle {
-        font-size: 1.2vw;
+        font-size: 1.25vw;
         font-weight: bold;
     }
     #author {
-        font-size: 0.9vw;
+        font-size: 0.95vw;
     }
     // .content {
     //     // letter-spacing: 15px;

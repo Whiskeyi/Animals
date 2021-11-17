@@ -65,7 +65,7 @@ export default {
     display: block;
 }
 .logo {
-    padding-top: 3.5vw;
+    padding-top: 4vw;
     height: 3.1vw;
     width: 3.1vw;
 }

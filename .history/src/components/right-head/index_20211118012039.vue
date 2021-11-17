@@ -20,7 +20,7 @@ export default {
 }
 .vertical {
     writing-mode: vertical-lr;
-    line-height: 46px;
+    line-height: 50px;
     color: #fff;
     font-size: 1.9vw;
 }

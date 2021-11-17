@@ -65,7 +65,7 @@ export default {
 #IntContent {
     font-size: 1.2vw;
     // font-size: 22px;
-    line-height: 4.8vh;
+    line-height: 4.8vw;
     display: block;
 }
 // @media screen and (max-width: 1440px) { // 屏幕小于1440px样式

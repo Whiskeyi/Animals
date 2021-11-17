@@ -56,18 +56,18 @@ export default {
 }
 #title {
     // font-size: 60px;
-    font-size: 3vw;
+    font-size: 3.1vw;
     display: block;
 }
 #subTitle {
     // font-size: 44px;
-    font-size: 2.3vw;
+    font-size: 2.5vw;
     display: block;
 }
 .logo {
-    padding-top: 3.5vw;
-    height: 3.1vw;
-    width: 3.1vw;
+    padding-top: 60px;
+    height: 3.2vw;
+    width: 3.2vw;
 }
 fade-enter {
     opacity: 0;

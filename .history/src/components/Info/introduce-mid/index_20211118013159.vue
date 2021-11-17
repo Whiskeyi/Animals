@@ -58,12 +58,12 @@ export default {
     padding: 15px 0;
 }
 .IntTitle {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: bold;
     line-height: 5.2vh;
 }
 #IntContent {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     // font-size: 22px;
     line-height: 4.8vh;
     display: block;

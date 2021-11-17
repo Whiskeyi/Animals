@@ -83,14 +83,14 @@ export default {
 }
 .poem {
     // writing-mode: vertical-lr;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     line-height: 4.6vh;
     #poemTitle {
-        font-size: 1.2vw;
+        font-size: 1.3vw;
         font-weight: bold;
     }
     #author {
-        font-size: 0.9vw;
+        font-size: 1vw;
     }
     // .content {
     //     // letter-spacing: 15px;
