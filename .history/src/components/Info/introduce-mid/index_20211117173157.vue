@@ -51,13 +51,11 @@ export default {
 #IntContent {
     font-size: 22px;
     line-height: 32px;
-    display: block;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
     #IntContent {
         font-size: 22px;
         line-height: 32px;
-        display: block;
     }
 }
 </style>

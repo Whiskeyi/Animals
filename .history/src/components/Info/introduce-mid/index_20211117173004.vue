@@ -25,9 +25,9 @@ export default {
     methods: {
           changeInfo() {
             setInterval(function() {
-                this.IntContent = animalsData.AnimalsDetail[store.state.num].content
-                document.getElementById('IntContent').innerHTML = this.IntContent
-                // window.console.log(this.content)
+                this.enName = animalsData.AnimalsDetail[store.state.num].enName
+                document.getElementById('IntContent').innerHTML = this.enName
+                // window.console.log(this.enName)
             }, 8000);
         }
     }
@@ -51,13 +51,11 @@ export default {
 #IntContent {
     font-size: 22px;
     line-height: 32px;
-    display: block;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
     #IntContent {
         font-size: 22px;
         line-height: 32px;
-        display: block;
     }
 }
 </style>

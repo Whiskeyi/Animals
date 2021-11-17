@@ -47,22 +47,22 @@ export default {
                 document.getElementById('author').innerHTML = this.author
 
                 this.content1 = animalsData.AnimalsDetail[store.state.num].poetryContent1
-                document.getElementById('content1').innerHTML = this.content1
+                document.getElementById('content1').innerHTML = this.title
 
                 this.content2 = animalsData.AnimalsDetail[store.state.num].poetryContent2
-                document.getElementById('content2').innerHTML = this.content2
+                document.getElementById('content2').innerHTML = this.title
 
                 this.content3 = animalsData.AnimalsDetail[store.state.num].poetryContent3
-                document.getElementById('content3').innerHTML = this.content3
+                document.getElementById('content3').innerHTML = this.title
 
                 this.content4 = animalsData.AnimalsDetail[store.state.num].poetryContent4
-                document.getElementById('content3').innerHTML = this.content4
+                document.getElementById('content3').innerHTML = this.title
 
-                this.food = animalsData.AnimalsDetail[store.state.num].food
-                document.getElementById('foodTitle').innerHTML = this.food
+                this.title = animalsData.AnimalsDetail[store.state.num].poetryName
+                document.getElementById('IntContent').innerHTML = this.title
 
-                this.enemy = animalsData.AnimalsDetail[store.state.num].enemy
-                document.getElementById('enemyTitle').innerHTML = this.enemy
+                this.title = animalsData.AnimalsDetail[store.state.num].poetryName
+                document.getElementById('IntContent').innerHTML = this.title
             }, 8000);
         }
     }

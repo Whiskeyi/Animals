@@ -10,7 +10,7 @@
                 <div id="poemTitle">{{ title }}</div>
             </el-col>
             <el-col class="habContent" :span="10">
-              <p class="foodTitle">捕食：{{ food }}</p>
+              <span>捕食：</span><p class="foodTitle">{{ food }}</p>
               <p class="enemyTitle">天敌：{{ enemy }}</p>
             </el-col>
       </el-row>
@@ -59,10 +59,10 @@ export default {
                 document.getElementById('content3').innerHTML = this.content4
 
                 this.food = animalsData.AnimalsDetail[store.state.num].food
-                document.getElementById('foodTitle').innerHTML = this.food
+                document.getElementById('IntContent').innerHTML = this.title
 
-                this.enemy = animalsData.AnimalsDetail[store.state.num].enemy
-                document.getElementById('enemyTitle').innerHTML = this.enemy
+                this.title = animalsData.AnimalsDetail[store.state.num].poetryName
+                document.getElementById('IntContent').innerHTML = this.title
             }, 8000);
         }
     }

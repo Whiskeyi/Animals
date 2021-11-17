@@ -2,8 +2,8 @@
     <div class="fooMid">
         <el-row class="botContainer">
             <el-col :sm="16" :md="16" :lg="16">
-                <div class="IntTitle">简介：</div>
-                <div id="IntContent">{{ IntContent }}</div>
+                <div id="IntTitle">简介：</div>
+                <div id="IntContent">猫科动物，分家猫、野猫，是全世界家庭中较为广泛的宠物。家猫的祖先据推测是起源于古埃及的沙漠猫，波斯的波斯猫，已经被人类驯化了3500年。</div>
             </el-col>
         </el-row>
     </div>
@@ -15,7 +15,8 @@ import store from '../../../store'
 export default {
     data() {
         return {
-            IntContent: '在甘肃天水西山坪大地湾一期文化中，已经发现了距今8000年左右的家鸡我国甲骨文中有“鸡”字，是世界上最早养鸡的国家之一'
+            name: '鸡',
+            enName: 'Chicken'
         }
     },
     mounted() {
@@ -25,9 +26,12 @@ export default {
     methods: {
           changeInfo() {
             setInterval(function() {
-                this.IntContent = animalsData.AnimalsDetail[store.state.num].content
-                document.getElementById('IntContent').innerHTML = this.IntContent
-                // window.console.log(this.content)
+                this.name = animalsData.AnimalsDetail[store.state.num].name
+                document.getElementById('title').innerHTML = this.name
+                // window.console.log(this.name)
+                this.enName = animalsData.AnimalsDetail[store.state.num].enName
+                document.getElementById('subTitle').innerHTML = this.enName
+                // window.console.log(this.enName)
             }, 8000);
         }
     }
@@ -43,7 +47,7 @@ export default {
 .botContainer {
     padding: 15px 0;
 }
-.IntTitle {
+#IntTitle {
     font-size: 24px;
     font-weight: bold;
     line-height: 40px;
@@ -51,13 +55,11 @@ export default {
 #IntContent {
     font-size: 22px;
     line-height: 32px;
-    display: block;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
     #IntContent {
         font-size: 22px;
         line-height: 32px;
-        display: block;
     }
 }
 </style>

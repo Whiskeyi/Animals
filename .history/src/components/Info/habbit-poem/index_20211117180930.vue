@@ -40,29 +40,9 @@ export default {
     methods: {
           changeInfo() {
             setInterval(function() {
-                this.title = animalsData.AnimalsDetail[store.state.num].poetryName
-                document.getElementById('poemTitle').innerHTML = this.title
-
-                this.author = animalsData.AnimalsDetail[store.state.num].poetryAuthor
-                document.getElementById('author').innerHTML = this.author
-
-                this.content1 = animalsData.AnimalsDetail[store.state.num].poetryContent1
-                document.getElementById('content1').innerHTML = this.content1
-
-                this.content2 = animalsData.AnimalsDetail[store.state.num].poetryContent2
-                document.getElementById('content2').innerHTML = this.content2
-
-                this.content3 = animalsData.AnimalsDetail[store.state.num].poetryContent3
-                document.getElementById('content3').innerHTML = this.content3
-
-                this.content4 = animalsData.AnimalsDetail[store.state.num].poetryContent4
-                document.getElementById('content3').innerHTML = this.content4
-
-                this.food = animalsData.AnimalsDetail[store.state.num].food
-                document.getElementById('foodTitle').innerHTML = this.food
-
-                this.enemy = animalsData.AnimalsDetail[store.state.num].enemy
-                document.getElementById('enemyTitle').innerHTML = this.enemy
+                this.IntContent = animalsData.AnimalsDetail[store.state.num].content
+                document.getElementById('IntContent').innerHTML = this.IntContent
+                // window.console.log(this.content)
             }, 8000);
         }
     }
@@ -80,7 +60,7 @@ export default {
     #poemTitle {
         font-weight: bold;
     }
-    .content {
+    #content {
         letter-spacing: 15px;
     }
 }
@@ -97,7 +77,7 @@ export default {
         #poemTitle {
             font-weight: bold;
         }
-        .content {
+        #content {
             letter-spacing: 10px;
         }
     }

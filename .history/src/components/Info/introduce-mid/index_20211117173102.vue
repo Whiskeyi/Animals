@@ -26,7 +26,7 @@ export default {
           changeInfo() {
             setInterval(function() {
                 this.IntContent = animalsData.AnimalsDetail[store.state.num].content
-                document.getElementById('IntContent').innerHTML = this.IntContent
+                document.getElementById('IntContent').innerHTML = this.content
                 // window.console.log(this.content)
             }, 8000);
         }
@@ -51,13 +51,11 @@ export default {
 #IntContent {
     font-size: 22px;
     line-height: 32px;
-    display: block;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
     #IntContent {
         font-size: 22px;
         line-height: 32px;
-        display: block;
     }
 }
 </style>

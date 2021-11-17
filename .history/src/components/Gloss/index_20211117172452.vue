@@ -49,7 +49,7 @@ export default {
   width: 100%;
   position: fixed;
   transition: background-color 2s ease-in; // 背景颜色切换2S过渡
-  filter: blur(2px); // 背景高斯模糊
+  filter: blur(1px); // 背景高斯模糊
   // z-index: -9; //暂时注释,影响调试
 }
 </style>

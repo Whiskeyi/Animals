@@ -59,10 +59,10 @@ export default {
                 document.getElementById('content3').innerHTML = this.content4
 
                 this.food = animalsData.AnimalsDetail[store.state.num].food
-                document.getElementById('foodTitle').innerHTML = this.food
+                document.getElementById('IntContent').innerHTML = this.title
 
-                this.enemy = animalsData.AnimalsDetail[store.state.num].enemy
-                document.getElementById('enemyTitle').innerHTML = this.enemy
+                this.title = animalsData.AnimalsDetail[store.state.num].poetryName
+                document.getElementById('IntContent').innerHTML = this.title
             }, 8000);
         }
     }

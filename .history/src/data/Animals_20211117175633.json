@@ -4,7 +4,7 @@
         {
             "enName": "Chicken",
             "name": "鸡",
-            "color": "#994639",
+            "color": "#FC9F4D",
             "content": "在甘肃天水西山坪大地湾一期文化中，已经发现了距今8000年左右的家鸡我国甲骨文中有“鸡”字，是世界上最早养鸡的国家之一",
             "food": "小虫子、菜叶、饲料",
             "enemy": "黄鼠狼、老鹰、狐狸",
@@ -14,7 +14,7 @@
             "poetryContent1": "数载书窗伴读鸣",
             "poetryContent2": "群中刚雉羽毛新",
             "poetryContent3": "今朝命试牛刀手",
-            "poetryContent4": "望断函关夜度人",
+            "poetryContent4": "望断函关夜度人。",
             "img": "../../icons/animals/chicken.png"
         },
 
@@ -31,14 +31,14 @@
             "poetryContent1": "猛虎不怯敌",
             "poetryContent2": "烈士无虚言",
             "poetryContent3": "怯敌辱其班",
-            "poetryContent4": "虚言负其恩",
+            "poetryContent4": "虚言负其恩。",
             "img": "../icons/animals/tiger.png"
         },
 
         {
             "enName": "Frog",
             "name": "蛙",
-            "color": "#EEA9A9",
+            "color": "#90B44B",
             "content": "青蛙属于脊索动物门、两栖纲、无尾目、卵产于水中，体外受精，孵化成蝌蚪，用鳃呼吸，成体主要用肺呼吸，兼用皮肤呼吸。上颌有齿，一般有犁骨齿",
             "food": "蚊子、苍蝇、飞蛾",
             "enemy": "蛇、小鸟",
@@ -48,7 +48,7 @@
             "poetryContent1": "湖山胜处放翁家",
             "poetryContent2": "槐柳阴中野径斜",
             "poetryContent3": "水满有时观下鹭",
-            "poetryContent4": "草深无处不鸣蛙",
+            "poetryContent4": "草深无处不鸣蛙。",
             "img": "../icons/animals/frog.png"
         },
 
@@ -65,7 +65,7 @@
             "poetryContent1": "春眠不觉晓",
             "poetryContent2": "处处闻啼鸟",
             "poetryContent3": "夜来风雨声",
-            "poetryContent4": "花落知多少",
+            "poetryContent4": "花落知多少。",
             "img": "../icons/animals/bird.png"
         },
 
@@ -82,7 +82,7 @@
             "poetryContent1": "红妆翠盖晓参差",
             "poetryContent2": "水面浮游有戏龟",
             "poetryContent3": "谁道千年解巢叶",
-            "poetryContent4": "也知曳尾已多时",
+            "poetryContent4": "也知曳尾已多时。",
             "img": "../icons/animals/turtle .png"
         },
 
@@ -99,14 +99,14 @@
             "poetryContent1": "山禽毛如白练带",
             "poetryContent2": "栖我庭前栗树枝",
             "poetryContent3": "猕猴半夜来取栗",
-            "poetryContent4": "一双中林向月飞",
+            "poetryContent4": "一双中林向月飞。",
             "img": "../icons/animals/monkey.png"
         },
 
         {
             "enName": "Lion",
             "name": "狮",
-            "color": "#A8497A",
+            "color": "#FF5E99",
             "content": "狮子在中国古称狻猊。是一种生存在非洲与亚洲的大型猫科动物，是现存平均体重最大的猫科动物，也是在世界上唯一一种雌雄两态的猫科动物",
             "food": "牛、鹿、猪",
             "enemy": "狮子没有天敌，狮子处于食物链顶端",
@@ -200,13 +200,13 @@
             "poetryContent1":"官仓老鼠大如斗",
             "poetryContent2":"见人开仓亦不走",
             "poetryContent3":"健儿无粮百姓饥",
-            "poetryContent4":"谁遣朝朝入君口",
+            "poetryContent4":"谁遣朝朝入君口。",
             "img": "../icons/animals/mouse.png"
         },
         {
             "enName": "Cat",
             "name":"猫",
-            "color": "#904840",
+            "color": "#434343",
             "content":"猫科动物，分家猫、野猫，是全世界家庭中较为广泛的宠物。家猫的祖先据推测是起源于古埃及的沙漠猫，波斯的波斯猫，已经被人类驯化了3500年",
             "food":"高蛋白质类食品，如鱼和肉类",
             "enemy":"蟒蛇、老虎、狮子",
@@ -238,7 +238,7 @@
         {
             "enName": "Wolf",
             "name":"狼",
-            "color": "#CAAD5F",
+            "color": "#434343",
             "content":"栖息于森林、沙漠、山地、寒带草原、针叶林、草地。夜间活动多，嗅觉敏锐，听觉很好。机警，多疑，善奔跑，耐力强，通常群体行动",
             "food":"羚羊、驯鹿、野牛等",
             "enemy":"老虎、狮子等",
@@ -264,7 +264,7 @@
             "poetryContent1":"不论平地与山尖",
             "poetryContent2":"无限风光尽被占",
             "poetryContent3":"采得百花成蜜后",
-            "poetryContent4":"为谁辛苦为谁甜",
+            "poetryContent4":"为谁辛苦为谁甜。",
             "img": "../icons/animals/bee.png"
         },
         {
@@ -302,7 +302,7 @@
         {
             "enName": "Sheep",
             "name":"羊",
-            "color": "#91B493",
+            "color": "#BDC0BA",
             "content":"羊是一种胆小、嗅觉灵敏、性情温顺的动物，四肢端正，短而粗壮，系部关节坚韧，蹄壳坚实，呈黑色；前肢长度适中、匀称",
             "food":"以草料为食",
             "enemy":"肉食性动物狼、老虎、狮子等",
@@ -312,13 +312,13 @@
             "poetryContent1":"神羊既不触",
             "poetryContent2":"夕鸟欲依人",
             "poetryContent3":"野老念牧童",
-            "poetryContent4":"倚杖候荆扉",
+            "poetryContent4":"倚杖候荆扉。",
             "img": "../icons/animals/sheep.png"
         },
         {
             "enName": "Cow",
             "name":"牛",
-            "color": "#86C166",
+            "color": "#BDC0BA",
             "content":"哺乳动物,体型粗壮,角中空,由头骨向两侧呈大弧度伸出。为了贮存草料、躲避敌害，它们的胃在进化中形成了4个室：即瘤胃、蜂巢胃、瓣胃和腺胃，还具有“反刍”的习性",
             "food":"玉米、水花生、红薯藤、水稻等食物",
             "enemy":"棕熊、老虎、狮子等",
@@ -334,7 +334,7 @@
         {
             "enName": "Dolphin",
             "name":"海豚",
-            "color": "#6699A1",
+            "color": "#BDC0BA",
             "content":"海豚属于鲸目、海豚科中的生物。它们属于齿鲸的一种，具有比较多的、尖利的牙齿。在海豚捕食的时候，它们的牙齿可以发挥重要的作用，使得它们可以捕食海洋中的诸多生物",
             "food":"小鱼、小虾、小蟹、乌贼等",
             "enemy":"虎鲸、大白鲨、虎鲨等",
@@ -360,23 +360,20 @@
             "poetryContent1":"霜落熊升树",
             "poetryContent2":"林空鹿饮溪",
             "poetryContent3":"人家在何许",
-            "poetryContent4":"云外一声鸡",
+            "poetryContent4":"云外一声鸡。",
             "img": "../icons/animals/bear.png"
         },
         {
             "enName": "Fox",
             "name":"狐",
-            "color": "#9B90C2",
+            "color": "#BDC0BA",
             "content":"狐，俗称狐狸，在动物分类学上，属于食肉目犬科，人工主要饲养的有银狐，为赤狐的一个亚种。狐狸繁殖率高，抗病力强，食性杂，好饲养。",
             "food":"两栖类、爬行类、小型鸟兽",
             "enemy":"狼、猞猁、鹰、鹫等",
             "voice":"https://mp3.haoge500.com/yinxiao/2019/06-20/wn5x5ayy24m.mp3",
             "poetryName":"《诗经·卫风·有狐》",
             "poetryAuthor":"春秋·佚名",
-            "poetryContent1":"有狐绥绥",
-            "poetryContent2":"在彼淇梁",
-            "poetryContent3":"心之忧矣",
-            "poetryContent4":"之子无裳",
+            "poetryContent":"有狐绥绥，在彼淇梁。心之忧矣，之子无裳。",
             "img": "../icons/animals/fox.png"
         },
         {
@@ -389,10 +386,7 @@
             "voice":"https://mp3.haoge500.com/upload/2015/03/15/836863.mp3",
             "poetryName":"《木兰诗 / 木兰辞》",
             "poetryAuthor":"南北朝·佚名",
-            "poetryContent1":"雄兔脚扑朔",
-            "poetryContent2":"雌兔眼迷离",
-            "poetryContent3":"双兔傍地走",
-            "poetryContent4":"安能辨我是雄雌",
+            "poetryContent":"雄兔脚扑朔，雌兔眼迷离；双兔傍地走，安能辨我是雄雌？",
             "img": "../icons/animals/rabbit.png"
         }
     ]
