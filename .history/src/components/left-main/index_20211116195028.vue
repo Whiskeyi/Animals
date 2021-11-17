@@ -1,0 +1,123 @@
+<template>
+  <div class="leftContainer">
+    <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/tiger.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/frog.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/bird.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/turtle.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/monkey.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/lion.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/elephant.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/horse.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/fish.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/dog.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/mouse.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/pig.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/wolf.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/bee.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+    </el-row>
+     <el-row :gutter="20" type="flex" justify="center" v-for="AnimalsDetail in data" :key="AnimalsDetail.enName">
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/cat.png')"></el-image>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+
+<script>
+import data from '@/data/Animals.json'
+export default {
+  data() {
+    return {
+      data
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.leftContainer {
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.leftContainer .logo {
+  width: 110px;
+  height: 110px;
+  padding: 20px 0;
+}
+ @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
+  .leftContainer .logo {
+    height: 80px;
+    width: 80px;
+    padding: 15px 0;
+  }
+ }
+</style>
