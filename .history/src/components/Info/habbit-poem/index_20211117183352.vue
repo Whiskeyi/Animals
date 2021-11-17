@@ -10,8 +10,8 @@
                 <div id="poemTitle">{{ title }}</div>
             </el-col>
             <el-col class="habContent" :span="10">
-              <span>捕食：</span><span id="food" class="foodTitle">{{ food }}</span><br>
-              <span>天敌：</span><span id="enemy" class="enemyTitle">{{ enemy }}</span>
+              <span id="food" class="foodTitle">捕食：{{ food }}</span><br>
+              <span id="enemy" class="enemyTitle">天敌：{{ enemy }}</span>
             </el-col>
       </el-row>
   </div>
@@ -87,7 +87,7 @@ export default {
 .habContainer {
     padding: 15px 0;
 }
-.habContent span {
+.habContent p {
     font-size: 20px;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式

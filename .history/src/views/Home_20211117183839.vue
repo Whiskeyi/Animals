@@ -56,8 +56,8 @@ export default {
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
   #leftContainer {
   position: absolute;
-  left: 8%;
-  width: 33%;
+  left: 5%;
+  width: 36%;
   height: 100%;
   margin: 0 auto;
 }

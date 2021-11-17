@@ -10,8 +10,8 @@
                 <div id="poemTitle">{{ title }}</div>
             </el-col>
             <el-col class="habContent" :span="10">
-              <span>捕食：</span><span id="food" class="foodTitle">{{ food }}</span><br>
-              <span>天敌：</span><span id="enemy" class="enemyTitle">{{ enemy }}</span>
+              <p class="foodTitle">捕食：{{ food }}</p>
+              <p class="enemyTitle">天敌：{{ enemy }}</p>
             </el-col>
       </el-row>
   </div>
@@ -59,10 +59,10 @@ export default {
                 document.getElementById('content3').innerHTML = this.content4
 
                 this.food = animalsData.AnimalsDetail[store.state.num].food
-                document.getElementById('food').innerHTML = this.food
+                document.getElementById('foodTitle').innerHTML = this.food
 
                 this.enemy = animalsData.AnimalsDetail[store.state.num].enemy
-                document.getElementById('enemy').innerHTML = this.enemy
+                document.getElementById('enemyTitle').innerHTML = this.enemy
             }, store.state.seconds);
         }
     }
@@ -87,7 +87,7 @@ export default {
 .habContainer {
     padding: 15px 0;
 }
-.habContent span {
+.habContent p {
     font-size: 20px;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式

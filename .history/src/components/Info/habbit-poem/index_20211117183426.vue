@@ -87,7 +87,7 @@ export default {
 .habContainer {
     padding: 15px 0;
 }
-.habContent span {
+.habContent p {
     font-size: 20px;
 }
 @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
