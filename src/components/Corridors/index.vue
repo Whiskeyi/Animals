@@ -12,7 +12,7 @@
           :key="i"
           :class="setClass(i)"
       >
-        {{ i }}
+
       </div>
     </div>
   </el-card>
@@ -24,29 +24,36 @@ export default {
   name: "corridors",
   data() {
     return{
-      lists: 25,
-      isMouseDown: false,//记录鼠标是否按下
-      startX: null,//按下时位置的x坐标
-      scrollLeft: null//记录视口相对于items最左侧已经滚过的距离
+      lists: 24,
+      isMouseDown: false, //记录鼠标是否按下
+      startX: null, //按下时位置的x坐标
+      scrollLeft: 600, //记录视口相对于items最左侧已经滚过的距离
+
+      timer: null, // 记录当前计时器的intervalID
+      isMove: true // 当前是否需要移动
     }
   },
   computed: {
 
   },
-  created () {
-    this.play()
+  // created () {
+  //   this.play(this.isMove)
+  // },
+  mounted() {
+    this.play(this.isMove)
   },
   methods: {
     setClass(i){
       return 'item' + ' ' + 'item'+ i ;
     },
     moveStart(e) {
+      this.play(this.isMove);
       this.isMouseDown = true;
       this.$refs.slider.classList.add('active');
       this.startX = e.pageX - this.$refs.slider.offsetLeft;
       this.scrollLeft = this.$refs.slider.scrollLeft;
     },
-    moveStop() {
+    moveStop(e) {
       this.isMouseDown = false;
       this.$refs.slider.classList.remove('active');
     },
@@ -56,22 +63,28 @@ export default {
       }
       e.preventDefault();
       const x = e.pageX - this.$refs.slider.offsetLeft;
-      const walk = (x - this.startX) * 3;
+      const walk = (x - this.startX) * 2;
       this.$refs.slider.scrollLeft = this.scrollLeft - walk;
     },
     autoPlay (e) {
-      let  n = 0;
+      let n = 0;
       n++;
       this.$refs.slider.scrollLeft = this.scrollLeft + 2;
       this.scrollLeft = this.scrollLeft + 2;
-      if(this.scrollLeft >=  this.$refs.slider.scrollWidth - 1280) {
-        this.scrollLeft = 100;
+      if(this.scrollLeft >=  this.$refs.slider.scrollWidth - 1280-1000) {
+        this.scrollLeft = 600;
       }
       console.log('------->',n , this.$refs.slider.scrollLeft, this.$refs.slider.scrollWidth);
     },
-    play (ifMove) {
-      let timeout = setInterval(this.autoPlay, 10);
-      if(ifMove) {clearTimeout(timeout)}
+    play(ifMove) {
+      console.log("ifMove = ", ifMove);
+      this.isMove = !this.isMove; // 下一次需不需要移动就直接取反
+      if(ifMove) {
+        this.timer = setInterval(this.autoPlay, 10);
+      } else {
+        clearInterval(this.timer);
+      }
+      console.log("nowTimer = ", this.timer);
     }
   },
 }
@@ -86,15 +99,15 @@ export default {
   display: none; /* Chrome Safari */
 }
 el-card{
-  width: 100vw;
-  height: 100vh;
+  width: 80vw;
+  height: 80vh;
 }
 
 .items {
   margin: auto 0;
   /*background-color: #2AD8FF;*/
   height: calc(100vh - 210px);
-  padding: 80px;
+  padding: 80px 40px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -171,15 +184,16 @@ el-card{
   box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
 }
 
-.item:nth-child(9n+1) { background: dodgerblue;}
-.item:nth-child(9n+2) { background: goldenrod;}
-.item:nth-child(9n+3) { background: paleturquoise;}
-.item:nth-child(9n+4) { background: gold;}
-.item:nth-child(9n+5) { background: cadetblue;}
-.item:nth-child(9n+6) { background: tomato;}
-.item:nth-child(9n+7) { background: lightcoral;}
-.item:nth-child(9n+8) { background: darkslateblue;}
-.item:nth-child(9n+9) { background: rebeccapurple;}
+.item:nth-child(10n+1) { background: dodgerblue;}
+.item:nth-child(10n+2) { background: goldenrod;}
+.item:nth-child(10n+3) { background: paleturquoise;}
+.item:nth-child(10n+4) { background: gold;}
+.item:nth-child(10n+5) { background: cadetblue;}
+.item:nth-child(10n+6) { background: tomato;}
+.item:nth-child(10n+7) { background: lightcoral;}
+.item:nth-child(10n+8) { background: darkslateblue;}
+.item:nth-child(10n+9) { background: rebeccapurple;}
+.item:nth-child(10n+10) { background: #3BC1AC;}
 
 
 .item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
