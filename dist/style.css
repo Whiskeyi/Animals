@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background:#4D5139;
+}
+
+.typing.animate {
+  width: 31ch;
+  border-right: 0.1em solid black;
+  font-family: monospace;
+  font-size: 2em;
+  animation: type 2.5s steps(28);
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.typing.animate::before { 
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: #FF9A00;
+  font-size: 3rem;
+  content: "Welcome To Our Animal World";
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28ch;
+  }
+}
