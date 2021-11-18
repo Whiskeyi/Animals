@@ -12,7 +12,9 @@
           :key="i"
           :class="setClass(i)"
       >
-
+<!--        <el-image-->
+<!--            :src="getValue()"-->
+<!--        ></el-image>-->
       </div>
     </div>
   </el-card>
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+const animalsData = require('@/data/Animals.json')
 export default {
   name: "corridors",
   data() {
@@ -30,7 +33,10 @@ export default {
       scrollLeft: 600, //记录视口相对于items最左侧已经滚过的距离
 
       timer: null, // 记录当前计时器的intervalID
-      isMove: true // 当前是否需要移动
+      isMove: true, // 当前是否需要移动
+
+      data: {},
+
     }
   },
   computed: {
@@ -40,6 +46,7 @@ export default {
   //   this.play(this.isMove)
   // },
   mounted() {
+    this.data = animalsData
     this.play(this.isMove)
   },
   methods: {
@@ -74,7 +81,6 @@ export default {
       if(this.scrollLeft >=  this.$refs.slider.scrollWidth - 1280-1000) {
         this.scrollLeft = 600;
       }
-      console.log('------->',n , this.$refs.slider.scrollLeft, this.$refs.slider.scrollWidth);
     },
     play(ifMove) {
       console.log("ifMove = ", ifMove);
@@ -85,7 +91,12 @@ export default {
         clearInterval(this.timer);
       }
       console.log("nowTimer = ", this.timer);
-    }
+    },
+
+    // getValue() {
+    //   const vo = this.data.AnimalsDetail;
+    //   return  vo[Math.floor((Math.random() * vo.length))].img;
+    // }
   },
 }
 </script>
