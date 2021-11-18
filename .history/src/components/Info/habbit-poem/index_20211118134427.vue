@@ -84,7 +84,7 @@ export default {
 .poem {
     // writing-mode: vertical-lr;
     font-size: 1.1vw;
-    line-height: 2.4vw;
+    line-height: 2vw;
     #poemTitle {
         font-size: 1.2vw;
         font-weight: bold;

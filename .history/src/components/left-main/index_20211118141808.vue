@@ -1,9 +1,14 @@
 <template>
   <div class="leftContainer">
-    <el-row :gutter="20" type="flex" justify="center" v-for="(i, inx) in data.AnimalsDetail.length/3" :key="inx">
-      <el-col :span="8" v-for="(item, index) in 3" :key="index">
+    <el-row :gutter="20" type="flex" justify="center" v-for="i in data.AnimalsDetail.lenth/3" :key="AnimalsDetail.enName">
+      <el-col :span="8">
         <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
-        <div>123</div>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/tiger.png')"></el-image>
+      </el-col>
+      <el-col :span="8">
+        <el-image class="logo" alt="logo" :src="require('@/icons/animals/frog.png')"></el-image>
       </el-col>
     </el-row>
   </div>
@@ -28,8 +33,6 @@ export default {
   padding: 30px 0;
   width: 100%;
   text-align: center;
-  color: #e6e6e6;
-  font-size: 1.3vw;
 }
 .leftContainer .logo {
   width: 80px;
