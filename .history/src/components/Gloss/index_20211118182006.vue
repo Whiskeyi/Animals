@@ -17,6 +17,17 @@ export default {
     },
     mounted() {
         this.changeColor()
+        let self = this;
+        this.$nextTick(() => {
+            let eventObj = {};
+            for (const selfItem in self) {
+                if (!selfItem.match(new RegExp("^[_\\$].*$"))) {
+                eventObj[selfItem] = self[selfItem];
+                }
+            }
+            this.$store.commit("setPageFunction", eventObj);
+            // window.console.log(animalsData.AnimalsDetail[0].color)
+        }
     },
     methods: {
         changeColor() {
@@ -35,16 +46,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-#bg {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  transition: background-color 2s ease-in; // 背景颜色切换2S过渡
-  filter: blur(2px); // 背景高斯模糊
-  // z-index: -9; //暂时注释,影响调试
-}
-</style>
 <style lang="scss" scoped>
 #gloss {
     position: fixed;
@@ -52,5 +53,13 @@ export default {
     height: 478px;
     background: url('../../assets/gloss.png') repeat-x;
     // z-index: -8;  //暂时注释,影响调试
+}
+#bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: background-color 2s ease-in; // 背景颜色切换2S过渡
+  filter: blur(2px); // 背景高斯模糊
+  // z-index: -9; //暂时注释,影响调试
 }
 </style>

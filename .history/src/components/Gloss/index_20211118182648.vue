@@ -30,21 +30,16 @@ export default {
                 document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
                 // this.color = color
             }, store.state.seconds);
+        },
+        changeColorNow() {
+                let num = Math.floor(Math.random() * animalsData.AnimalsDetail.length)
+                store.commit('saveNum',num)
+                document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
         }
     }
 }
 </script>
 
-<style lang="scss">
-#bg {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  transition: background-color 2s ease-in; // 背景颜色切换2S过渡
-  filter: blur(2px); // 背景高斯模糊
-  // z-index: -9; //暂时注释,影响调试
-}
-</style>
 <style lang="scss" scoped>
 #gloss {
     position: fixed;
@@ -52,5 +47,13 @@ export default {
     height: 478px;
     background: url('../../assets/gloss.png') repeat-x;
     // z-index: -8;  //暂时注释,影响调试
+}
+#bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: background-color 2s ease-in; // 背景颜色切换2S过渡
+  filter: blur(2px); // 背景高斯模糊
+  // z-index: -9; //暂时注释,影响调试
 }
 </style>

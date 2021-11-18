@@ -8,33 +8,26 @@
       <h1 class="vertical">Animals——爱生万物</h1>
           </el-row>
           <el-row>
-      <!-- <div class="trans">
-        <el-switch v-model="switcher" active-color="#fafafa" @change="tranOn()"></el-switch>
-      </div> -->
+      <div class="trans">
+        <el-switch v-model="switcher" active-color="#fafafa" @change="tranOn(is)"></el-switch>
+      </div>
           </el-row>
       </el-col>
   </div>
 </template>
 
 <script>
-// const animalsData = require('@/data/Animals.json')
-// import store from '../../store'
 export default {
     data() {
         return {
-            // switcher: true
+            switcher: true
         }
     },
     methods: {
-        // tranOn() {
-        //     window.console.log(this.switcher)
-        //     if(this.switcher == true) {
-        //         window.console.log(this.switcher == true)
-        //         setInterval(window.timer);
-        //     }else {
-        //         clearInterval(window.timer);
-        //     }
-        // }
+        tranOn(is) {
+            window.console.log(is)
+            // clearInterval(window.timer);
+        }
     }
 }
 </script>
@@ -57,11 +50,11 @@ export default {
     // width: 90px;
     padding-bottom: 20px;
 }
-// .trans {
-//     margin-top: 200%;
-//     // transform: translateX(-50%) rotate(-90deg);
-//     margin-left: 30px;
-// }
+.trans {
+    margin-top: 200%;
+    // transform: translateX(-50%) rotate(-90deg);
+    margin-left: 30px;
+}
 // @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
 //     .rightHeadContainer {
 //         float: left;

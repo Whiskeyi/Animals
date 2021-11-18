@@ -3,7 +3,7 @@
     <el-row :gutter="20" type="flex" justify="center" v-for="(i, inx) in dataLength/3" :key="inx">
       <el-col :span="8" v-for="(item, index) in getNum(inx * 3)" :key="index">
         <div class="pro-card-wrapper">
-          <div class="pro-card" @click="getInfo((i - 1) * 3 + index)">
+          <div class="pro-card" @click="">
             <div class="pic">
               <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
             </div>
@@ -17,15 +17,12 @@
 
 <script>
 const animalsData = require('@/data/Animals.json')
-import store from '../../store'
 export default {
   data() {
     return {
       data: {},
       dataLength: ''
     }
-  },
-  components: {
   },
   created() {
   },
@@ -38,16 +35,7 @@ export default {
         // window.console.log(this.data.AnimalsDetail.slice(inx, inx + 3))
         return this.data.AnimalsDetail.slice(inx, inx + 3)
       },
-      getInfo(index) {
-        store.commit('saveNum', index)
-        clearInterval(window.timer)
-        document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[index].color
-        window.timer = setInterval(function() {
-            let num = Math.floor(Math.random() * animalsData.AnimalsDetail.length)
-            store.commit('saveNum',num)
-            document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
-        }, store.state.seconds);
-      }
+      getInfo(index)
   }
 }
 </script>

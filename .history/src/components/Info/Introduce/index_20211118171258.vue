@@ -65,5 +65,4 @@ export default {
     height: 3.1vw;
     width: 3.1vw;
 }
-
 </style>

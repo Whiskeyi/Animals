@@ -30,6 +30,11 @@ export default {
                 document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
                 // this.color = color
             }, store.state.seconds);
+        },
+        changeColorNow() {
+                let num = Math.floor(Math.random() * animalsData.AnimalsDetail.length)
+                store.commit('saveNum',num)
+                document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
         }
     }
 }
@@ -53,4 +58,5 @@ export default {
     background: url('../../assets/gloss.png') repeat-x;
     // z-index: -8;  //暂时注释,影响调试
 }
+
 </style>

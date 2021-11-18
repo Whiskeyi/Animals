@@ -18,6 +18,7 @@
 <script>
 const animalsData = require('@/data/Animals.json')
 import store from '../../store'
+import Gloss from '../../components/Gloss'
 export default {
   data() {
     return {
@@ -26,6 +27,7 @@ export default {
     }
   },
   components: {
+    Gloss
   },
   created() {
   },
@@ -40,13 +42,8 @@ export default {
       },
       getInfo(index) {
         store.commit('saveNum', index)
-        clearInterval(window.timer)
-        document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[index].color
-        window.timer = setInterval(function() {
-            let num = Math.floor(Math.random() * animalsData.AnimalsDetail.length)
-            store.commit('saveNum',num)
-            document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
-        }, store.state.seconds);
+        clearInterval(window.timer);
+        // window.console.log(store.state.num)
       }
   }
 }

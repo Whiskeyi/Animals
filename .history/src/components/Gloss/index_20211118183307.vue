@@ -30,6 +30,11 @@ export default {
                 document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
                 // this.color = color
             }, store.state.seconds);
+        },
+        changeColorNow() {
+                let num = Math.floor(Math.random() * animalsData.AnimalsDetail.length)
+                store.commit('saveNum',num)
+                document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
         }
     }
 }

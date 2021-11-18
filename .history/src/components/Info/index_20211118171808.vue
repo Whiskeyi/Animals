@@ -26,7 +26,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../styles/transition.scss';
 .infoContainer {
     float: left;
     z-index: 10000;
