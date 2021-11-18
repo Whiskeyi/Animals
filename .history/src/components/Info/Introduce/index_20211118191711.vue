@@ -39,12 +39,12 @@ export default {
     //     }
     // },
     computed: {
-        nameChange() {
+        name() {
             return store.state.num
         }
     },
     watch: {
-        nameChange: function() {
+        name: function() {
              this.name = animalsData.AnimalsDetail[store.state.num].name
              document.getElementById('title').innerHTML = this.name
              this.enName = animalsData.AnimalsDetail[store.state.num].enName

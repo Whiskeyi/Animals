@@ -39,16 +39,14 @@ export default {
     //     }
     // },
     computed: {
-        nameChange() {
+        name() {
             return store.state.num
         }
     },
     watch: {
-        nameChange: function() {
-             this.name = animalsData.AnimalsDetail[store.state.num].name
-             document.getElementById('title').innerHTML = this.name
-             this.enName = animalsData.AnimalsDetail[store.state.num].enName
-             document.getElementById('subTitle').innerHTML = this.enName
+        name: function() {
+            this.IntContent = animalsData.AnimalsDetail[store.state.num].content
+            document.getElementById('IntContent').innerHTML = this.IntContent
         }
     }
 }
