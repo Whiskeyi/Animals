@@ -40,7 +40,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/flip.scss";
 .leftContainer {
   padding: 30px 0;
   width: 100%;

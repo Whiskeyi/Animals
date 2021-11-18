@@ -5,7 +5,8 @@
         <div class="pro-card-wrapper">
           <div class="pro-card">
             <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
+              <span>{{ item.name }}</span>
+              <!-- <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image> -->
             </div>
             <div class="romaji">{{ item.enName }}</div>
           </div>

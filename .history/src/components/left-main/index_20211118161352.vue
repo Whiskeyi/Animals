@@ -2,14 +2,10 @@
   <div class="leftContainer">
     <el-row :gutter="20" type="flex" justify="center" v-for="(i, inx) in dataLength/3" :key="inx">
       <el-col :span="8" v-for="(item, index) in getNum(inx * 3)" :key="index">
-        <div class="pro-card-wrapper">
-          <div class="pro-card">
-            <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
-            </div>
-            <div class="romaji">{{ item.enName }}</div>
-          </div>
+        <div class="pic">
+          <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
         </div>
+        <div>{{ item.enName }}</div>
       </el-col>
     </el-row>
   </div>
@@ -40,7 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/flip.scss";
 .leftContainer {
   padding: 30px 0;
   width: 100%;

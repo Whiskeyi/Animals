@@ -5,7 +5,8 @@
         <div class="pro-card-wrapper">
           <div class="pro-card">
             <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
+              <span class="logo">{{ item.name }}</span>
+              <!-- <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image> -->
             </div>
             <div class="romaji">{{ item.enName }}</div>
           </div>
@@ -52,6 +53,7 @@ export default {
   width: 80px;
   height: 80px;
   padding: 40px 0;
+  font-size: 32px;
 }
  @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
   .leftContainer .logo {
