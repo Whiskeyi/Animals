@@ -1,8 +1,9 @@
 <template>
   <div class="leftContainer">
     <el-row :gutter="20" type="flex" justify="center" v-for="(i, inx) in dataLength/3" :key="inx">
-      <el-col :span="8" v-for="(item, index) in getNum(inx * 3)" :key="index">
+      <el-col :span="8" v-for="(item, index) in getNum(inx)" :key="index">
         <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
+        {{ index }}
         <div>{{ item.enName }}</div>
       </el-col>
     </el-row>
@@ -18,19 +19,23 @@ export default {
       dataLength: ''
     }
   },
-  created() {
-  },
   mounted() {
     this.data = animalsData
     this.dataLength = this.data.AnimalsDetail.length
   },
   methods: {
-      getNum(inx){
-        // window.console.log(this.data.AnimalsDetail.slice(inx, inx + 3))
-        return this.data.AnimalsDetail.slice(inx, inx + 3)
+    //  getNum(inx){
+    //     // window.console.log(this.data.AnimalsDetail.slice(inx, inx + 3))
+    //     return this.data.AnimalsDetail.slice(inx, inx + 3)
+    //   }
+    getNum(){
+      return function(inx){
+        window.console.log(this.data.AnimalsDetail.slice(inx,inx+3))
+       return this.data.AnimalsDetail.slice(inx,inx+3)
       }
+    }
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped>

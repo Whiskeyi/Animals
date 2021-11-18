@@ -18,19 +18,17 @@ export default {
       dataLength: ''
     }
   },
-  created() {
-  },
   mounted() {
     this.data = animalsData
     this.dataLength = this.data.AnimalsDetail.length
   },
   methods: {
-      getNum(inx){
+     getNum(inx){
         // window.console.log(this.data.AnimalsDetail.slice(inx, inx + 3))
         return this.data.AnimalsDetail.slice(inx, inx + 3)
       }
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped>

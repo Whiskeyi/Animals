@@ -1,9 +1,10 @@
 <template>
   <div class="leftContainer">
-    <el-row :gutter="20" type="flex" justify="center" v-for="(i, inx) in dataLength/3" :key="inx">
-      <el-col :span="8" v-for="(item, index) in getNum(inx * 3)" :key="index">
+    <el-row :gutter="20" type="flex" justify="center" v-for="(da, data) in data.AnimalsDetail" :key="data">
+      <el-col :span="8" v-for="(item, index) in 3" :key="index">
         <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
-        <div>{{ item.enName }}</div>
+        <div>123</div>
+        <div>{{ data }}</div>
       </el-col>
     </el-row>
   </div>
@@ -14,21 +15,11 @@ const animalsData = require('@/data/Animals.json')
 export default {
   data() {
     return {
-      data: {},
-      dataLength: ''
+      data: {}
     }
-  },
-  created() {
   },
   mounted() {
     this.data = animalsData
-    this.dataLength = this.data.AnimalsDetail.length
-  },
-  methods: {
-      getNum(inx){
-        // window.console.log(this.data.AnimalsDetail.slice(inx, inx + 3))
-        return this.data.AnimalsDetail.slice(inx, inx + 3)
-      }
   }
 }
 </script>

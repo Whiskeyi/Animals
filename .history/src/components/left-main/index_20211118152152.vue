@@ -4,6 +4,7 @@
       <el-col :span="8" v-for="(item, index) in getNum(inx * 3)" :key="index">
         <el-image class="logo" alt="logo" :src="require('@/icons/animals/chicken.png')"></el-image>
         <div>{{ item.enName }}</div>
+        {{ item.img }}
       </el-col>
     </el-row>
   </div>
@@ -18,19 +19,17 @@ export default {
       dataLength: ''
     }
   },
-  created() {
-  },
   mounted() {
     this.data = animalsData
     this.dataLength = this.data.AnimalsDetail.length
   },
   methods: {
-      getNum(inx){
+     getNum(inx){
         // window.console.log(this.data.AnimalsDetail.slice(inx, inx + 3))
         return this.data.AnimalsDetail.slice(inx, inx + 3)
       }
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped>

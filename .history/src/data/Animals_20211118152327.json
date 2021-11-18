@@ -2,7 +2,7 @@
     "AnimalsDetail":
     [
         {
-            "enName": "Chicken",
+            "enName": "chicken",
             "name": "鸡",
             "color": "#994639",
             "content": "在甘肃天水西山坪大地湾一期文化中，已经发现了距今8000年左右的家鸡我国甲骨文中有“鸡”字，是世界上最早养鸡的国家之一",
@@ -15,11 +15,11 @@
             "poetryContent2": "群中刚雉羽毛新",
             "poetryContent3": "今朝命试牛刀手",
             "poetryContent4": "望断函关夜度人",
-            "img": "require('../../icons/animals/chicken.png')"
+            "img": "../../icons/animals/chicken.png"
         },
 
         {
-            "enName": "Tiger",
+            "enName": "tiger",
             "name": "虎",
             "color": "#E98B2A",
             "content": "老虎是体型最大的两种猫科动物之一。有敏锐的听力、夜视力，还有白色到橘黄色的毛皮上有黑色垂直的条纹，这有助于其在捕猎时隐蔽自身",
