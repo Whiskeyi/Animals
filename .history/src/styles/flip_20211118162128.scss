@@ -1,0 +1,35 @@
+.pro-card-wrapper {
+    /* 开启3D空间 */
+    perspective: 100px;
+  }
+
+  .pro-card {
+    /* 基础布局 */
+    position: relative;
+    text-align: center;
+
+    /* 翻转特效时间 */
+    transition: transform 0.8s;
+    /* 保留3D空间 */
+    transform-style: preserve-3d;
+  }
+
+  .word,
+  .pic {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 隐藏3D的背面 */
+    backface-visibility: hidden;
+    /* border: 1px solid #f3f3f2; */
+    color: white;
+  }
+
+  /* 翻转卡片 */
+  .pic {
+    transform: rotateY(180deg);
+  }
+
+  .pro-card-wrapper:hover .pro-card {
+    transform: rotateY(180deg);
+  }
