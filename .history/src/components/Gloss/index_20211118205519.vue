@@ -44,28 +44,6 @@ export default {
   filter: blur(1px); // 背景高斯模糊
   // z-index: -9; //暂时注释,影响调试
 }
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
-  ::-webkit-scrollbar{
-    width: 6px;
-    height: 6px;
-    background-color: rgba(250, 250, 250, 0.1);
-  }
-
-  /*定义滚动条轨道 内阴影+圆角*/
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: rgba(250, 250, 250, 0.1);
-  }
-
-  /*定义滑块 内阴影+圆角*/
-  ::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
-    background-color: #c8c8c8;
-  }
 </style>
 <style lang="scss" scoped>
 #gloss {

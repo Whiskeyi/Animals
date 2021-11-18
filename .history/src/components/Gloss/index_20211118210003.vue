@@ -46,9 +46,9 @@ export default {
 }
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
   ::-webkit-scrollbar{
-    width: 6px;
-    height: 6px;
-    background-color: rgba(250, 250, 250, 0.1);
+    width: 5px;
+    height: 5px;
+    background-color: #F5F5F5;
   }
 
   /*定义滚动条轨道 内阴影+圆角*/
@@ -56,7 +56,7 @@ export default {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: rgba(250, 250, 250, 0.1);
+    background-color: #F5F5F5;
   }
 
   /*定义滑块 内阴影+圆角*/

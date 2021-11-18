@@ -61,7 +61,7 @@ export default {
     this.dataLength = this.data.AnimalsDetail.length
   },
   mounted() {
-    // window.console.log(this.imgs)
+    window.console.log(this.imgs)
   },
   methods: {
       getNum(inx) {
