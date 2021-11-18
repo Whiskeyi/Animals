@@ -67,11 +67,11 @@ export default {
     background-color: #c8c8c8;
   }
   ::-moz-selection {
-    background: #000;
+    background: #c8c8c8;
     color: #fafafa;
   }
   ::selection {
-    background: #000;
+    background: #c8c8c8;
     color: #fafafa;
   }
 </style>

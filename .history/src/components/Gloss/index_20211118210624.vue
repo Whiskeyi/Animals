@@ -67,12 +67,12 @@ export default {
     background-color: #c8c8c8;
   }
   ::-moz-selection {
-    background: #000;
-    color: #fafafa;
+    background: #c8c8c8;
+    color: #ffffff;
   }
   ::selection {
-    background: #000;
-    color: #fafafa;
+    background: #c8c8c8;
+    color: #ffffff;
   }
 </style>
 <style lang="scss" scoped>
