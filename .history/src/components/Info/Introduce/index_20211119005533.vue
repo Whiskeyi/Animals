@@ -73,7 +73,7 @@ export default {
 }
 #title {
     // font-size: 60px;
-    font-size: 2.6vw;
+    font-size: 2.7vw;
     display: block;
 }
 #subTitle {

@@ -101,10 +101,10 @@ export default {
   height: 70px;
   padding: 50px 0;
 }
- @media screen and (max-width: 1024px) { // 屏幕小于1024px样式
+ @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
   .leftContainer .logo {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     padding: 30px 0;
   }
  }

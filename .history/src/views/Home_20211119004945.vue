@@ -80,7 +80,7 @@ export default {
   #rightContainer {
     position: fixed;
     right: 0%;
-    width: 62%;
+    width: 68%;
     height: 100%;
     margin: 0 auto;
   }

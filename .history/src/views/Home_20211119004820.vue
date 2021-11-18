@@ -72,15 +72,15 @@ export default {
 @media screen and (min-width: 960px) and (max-width:1440px) { // 屏幕大于等于960px小于1440px样式
   #leftContainer {
     position: absolute;
-    left: 11%;
-    width: 27%;
+    left: 8%;
+    width: 30%;
     height: 100%;
     margin: 0 auto;
   }
   #rightContainer {
     position: fixed;
-    right: 0%;
-    width: 62%;
+    right: 2%;
+    width: 63%;
     height: 100%;
     margin: 0 auto;
   }

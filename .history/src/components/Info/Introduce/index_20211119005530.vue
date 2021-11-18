@@ -73,12 +73,12 @@ export default {
 }
 #title {
     // font-size: 60px;
-    font-size: 2.6vw;
+    font-size: 2.7vw;
     display: block;
 }
 #subTitle {
     // font-size: 44px;
-    font-size: 2.0vw;
+    font-size: 2.1vw;
     display: block;
 }
 .logo {
