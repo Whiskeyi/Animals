@@ -5,7 +5,7 @@
         <div class="pro-card-wrapper">
           <div class="pro-card" @click="getInfo((i - 1) * 3 + index)">
             <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('../../icons/animals/'+imgs[(i - 1) * 3 + index].img+'.png')"></el-image>
+              <el-image class="logo" alt="logo" :src="require('../../icons/animals/'+imgs[0]+'.png')"></el-image>
             </div>
             <div class="romaji">{{ item.enName }}</div>
           </div>
@@ -33,28 +33,28 @@ export default {
     var imgs = [
           {img: 'chicken'},
           {img: 'tiger'},
-          {img: 'frog'},
-          {img: 'bird'},
-          {img: 'turtle'},
-          {img: 'monkey'},
-          {img: 'lion'},
-          {img: 'elephant'},
-          {img: 'horse'},
-          {img: 'fish'},
-          {img: 'dog'},
-          {img: 'mouse'},
-          {img: 'cat'},
-          {img: 'pig'},
-          {img: 'wolf'},
-          {img: 'bee'},
-          {img: 'snake'},
-          {img: 'duck'},
-          {img: 'sheep'},
-          {img: 'cow'},
-          {img: 'dolphin'},
-          {img: 'bear'},
-          {img: 'fox'},
-          {img: 'rabbit'},
+          {img:'../icons/animals/frog.png'},
+          {img:'../icons/animals/bird.png'},
+          {img:'../icons/animals/turtle.png'},
+          {img:'../icons/animals/monkey.png'},
+          {img:'../icons/animals/lion.png'},
+          {img:'../icons/animals/elephant.png'},
+          {img:'../icons/animals/horse.png'},
+          {img:'../icons/animals/fish.png'},
+          {img:'../icons/animals/dog.png'},
+          {img:'../icons/animals/mouse.png'},
+          {img:'../icons/animals/cat.png'},
+          {img:'../icons/animals/pig.png'},
+          {img:'../icons/animals/wolf.png'},
+          {img:'../icons/animals/bee.png'},
+          {img:'../icons/animals/snake.png'},
+          {img:'../icons/animals/duck.png'},
+          {img:'../icons/animals/sheep.png'},
+          {img:'../icons/animals/cow.png'},
+          {img:'../icons/animals/dolphin.png'},
+          {img:'../icons/animals/bear.png'},
+          {img:'../icons/animals/fox.png'},
+          {img:'../icons/animals/rabbit.png'},
         ]
     this.imgs = imgs
     this.data = animalsData

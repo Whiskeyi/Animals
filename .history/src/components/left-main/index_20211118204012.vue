@@ -5,7 +5,7 @@
         <div class="pro-card-wrapper">
           <div class="pro-card" @click="getInfo((i - 1) * 3 + index)">
             <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('../../icons/animals/'+imgs[(i - 1) * 3 + index].img+'.png')"></el-image>
+              <el-image class="logo" alt="logo" :src="require('../../icons/animals/'+imgs[item].img+'.png')"></el-image>
             </div>
             <div class="romaji">{{ item.enName }}</div>
           </div>

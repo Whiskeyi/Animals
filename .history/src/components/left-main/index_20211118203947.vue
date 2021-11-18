@@ -50,10 +50,10 @@ export default {
           {img: 'snake'},
           {img: 'duck'},
           {img: 'sheep'},
-          {img: 'cow'},
+          {img: 'cow.png'},
           {img: 'dolphin'},
           {img: 'bear'},
-          {img: 'fox'},
+          {img: 'fox.png'},
           {img: 'rabbit'},
         ]
     this.imgs = imgs

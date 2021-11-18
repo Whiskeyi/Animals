@@ -15,7 +15,7 @@
             "poetryContent2": "群中刚雉羽毛新",
             "poetryContent3": "今朝命试牛刀手",
             "poetryContent4": "望断函关夜度人",
-            "img": "../../icons/animals/chicken.png"
+            "img": "require('../../icons/animals/chicken.png')"
         },
 
         {
@@ -83,7 +83,7 @@
             "poetryContent2": "水面浮游有戏龟",
             "poetryContent3": "谁道千年解巢叶",
             "poetryContent4": "也知曳尾已多时",
-            "img": "../icons/animals/turtle.png"
+            "img": "../icons/animals/turtle .png"
         },
 
         {

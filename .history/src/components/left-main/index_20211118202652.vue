@@ -5,7 +5,7 @@
         <div class="pro-card-wrapper">
           <div class="pro-card" @click="getInfo((i - 1) * 3 + index)">
             <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('../../icons/animals/'+imgs[(i - 1) * 3 + index].img+'.png')"></el-image>
+              <el-image class="logo" alt="logo" :src="require('../../icons/animals/bear.png')"></el-image>
             </div>
             <div class="romaji">{{ item.enName }}</div>
           </div>
@@ -17,7 +17,7 @@
 
 <script>
 const animalsData = require('@/data/Animals.json')
-// import '../../data/imgs';
+import { imgs } from '@/data.imgs.js';
 import store from '../../store'
 export default {
   data() {
@@ -30,32 +30,6 @@ export default {
   components: {
   },
   created() {
-    var imgs = [
-          {img: 'chicken'},
-          {img: 'tiger'},
-          {img: 'frog'},
-          {img: 'bird'},
-          {img: 'turtle'},
-          {img: 'monkey'},
-          {img: 'lion'},
-          {img: 'elephant'},
-          {img: 'horse'},
-          {img: 'fish'},
-          {img: 'dog'},
-          {img: 'mouse'},
-          {img: 'cat'},
-          {img: 'pig'},
-          {img: 'wolf'},
-          {img: 'bee'},
-          {img: 'snake'},
-          {img: 'duck'},
-          {img: 'sheep'},
-          {img: 'cow'},
-          {img: 'dolphin'},
-          {img: 'bear'},
-          {img: 'fox'},
-          {img: 'rabbit'},
-        ]
     this.imgs = imgs
     this.data = animalsData
     this.dataLength = this.data.AnimalsDetail.length
