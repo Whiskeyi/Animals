@@ -13,9 +13,6 @@
                 <source :src="mediaUrl" type="audio/mpeg">
               </audio>
           </el-col>
-          <el-col :span="9">
-              <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
-          </el-col>
       </el-row>
   </div>
 </template>
@@ -29,8 +26,7 @@ export default {
             name: '鸡',
             enName: 'Chicken',
             show: '1',
-            mediaUrl: 'http://mrclan.com/fastdl/tfc/sound/chick.wav',
-            svg: 'Bear'
+            mediaUrl: 'http://mrclan.com/fastdl/tfc/sound/chick.wav'
         }
     },
     // mounted() {
@@ -65,7 +61,6 @@ export default {
             //  document.getElementById('subTitle').innerHTML = this.enName
              this.mediaUrl = animalsData.AnimalsDetail[store.state.num].voice
             //  window.console.log(this.mediaUrl)
-            this.svg = animalsData.AnimalsDetail[store.state.num].enName
             document.getElementById("voice").load(); // audio load
         }
     }
@@ -101,7 +96,5 @@ export default {
     height: 3.0vw;
     width: 16.0vw;
 }
-.svgIcon {
-    width: 6vw;
-}
+
 </style>

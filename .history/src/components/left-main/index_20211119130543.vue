@@ -28,8 +28,7 @@ export default {
     return {
       data: {},
       dataLength: '',
-      imgs: [],
-      valid: false
+      imgs: []
     }
   },
   components: {
@@ -75,8 +74,6 @@ export default {
       },
       getInfo(index) {
         store.commit('saveNum', index)
-        // 触发淡出动画
-        // document.getElementById('infoContainer').add("mainFadeIn")
         clearInterval(window.timer)
         document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[index].color
         window.timer = setInterval(function() {
@@ -84,30 +81,25 @@ export default {
             store.commit('saveNum',num)
             document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
         }, store.state.seconds);
-        // window.console.log('throttle') // 测试节流
       },
       // 节流throttle 处理频繁点击click事件
       throttle(fn, delay) {
+          let valid = false
           return function() {
-            var throttle
-            this.valid = false
-            clearTimeout(throttle)
-            throttle = setTimeout(() => {
+            setTimeout(() => {
               fn()
-              this.valid = true;
+              valid = true;
             }, delay)
-          }
+        }
       }
-  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../styles/flip.scss";
-// .mainFadeIn {
-//   animation: fadeIn 5s ease;
-// }
+
 .leftContainer {
+
   padding: 30px 0;
   width: 100%;
   text-align: center;

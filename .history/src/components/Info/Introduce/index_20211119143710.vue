@@ -7,15 +7,18 @@
             </transition>
             <div id="subTitle">{{ enName }}</div>
           </el-col>
+          <el-col>
+              <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
+          </el-col>
           <el-col :span="10">
               <audio id="voice" controls class="logo">
                 <!-- <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image> -->
                 <source :src="mediaUrl" type="audio/mpeg">
               </audio>
           </el-col>
-          <el-col :span="9">
+          <!-- <el-col :span="9">
               <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
-          </el-col>
+          </el-col> -->
       </el-row>
   </div>
 </template>
