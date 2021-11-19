@@ -2,8 +2,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Corridors from './views/Corridors.vue'
 import WelcomePage from './views/WelcomePage.vue'
+import CorridorsPage from "@/views/CorridorsPage";
 
 
 Vue.use(Router)
@@ -20,13 +20,14 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component: Home
+      component: Home,
     },
     {
       path: '/corridors',
-      name: 'corridors',
-      component: Corridors
-    }
+      name: 'CorridorsPage',
+      component: CorridorsPage,
+    },
+
     // {
     //   path: '/loading',
     //   name: 'load',

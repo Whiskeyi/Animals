@@ -1,19 +1,18 @@
 ﻿<template>
   <div class="bg">
     <div class="gloss">
-      <Corridors/>
+      <Corridor/>
     </div>
   </div>
 </template>
 
 <script>
-import Corridors from '@/components/Corridors'
+import Corridor from '@/components/Corridors'
 
 export default {
   name: 'Corridors',
   components: {
-
-    Corridors
+    Corridor
   }
 }
 </script>
