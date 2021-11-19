@@ -104,9 +104,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../styles/flip.scss";
-// .mainFadeIn {
-//   animation: fadeIn 5s ease;
-// }
+.mainFadeIn {
+  animation: fadeIn 5s ease;
+}
 .leftContainer {
   padding: 30px 0;
   width: 100%;

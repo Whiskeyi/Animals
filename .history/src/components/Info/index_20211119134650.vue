@@ -1,5 +1,5 @@
 <template>
-  <div id="infoContainer" class="infoContainer">
+  <div class="infoContainer">
     <transition name="fade">
       <div class="infPadding">
           <!-- 标题、声音icon -->
@@ -24,7 +24,8 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+
+<style lang="scss" scoped>
 .infoContainer {
     float: left;
     z-index: 10000;
@@ -35,19 +36,6 @@ export default {
     color:#fff;
     animation: fadeIn 5s ease;
 }
-@media screen and (max-width: 1280px) { // 屏幕<1280px样式
-  .infoContainer {
-    float: left;
-    z-index: 10000;
-    width: 65%;
-    height: 80%;
-    margin: 26px 0 0 16px;
-    animation: fadeIn 5s ease;
-  }
-}
-</style>
-<style lang="scss" scoped>
-
 .infPadding {
   padding: 0 0 0 50px;
 }
@@ -72,5 +60,14 @@ export default {
 //     margin: 26px 0 0 16px;
 //   }
 // }
-
+@media screen and (max-width: 1280px) { // 屏幕<1280px样式
+  .infoContainer {
+    float: left;
+    z-index: 10000;
+    width: 65%;
+    height: 80%;
+    margin: 26px 0 0 16px;
+    animation: fadeIn 5s ease;
+  }
+}
 </style>

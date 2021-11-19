@@ -102,6 +102,6 @@ export default {
     width: 16.0vw;
 }
 .svgIcon {
-    width: 6vw;
+    width: 10vw;
 }
 </style>

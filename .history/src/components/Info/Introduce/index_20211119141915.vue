@@ -14,7 +14,7 @@
               </audio>
           </el-col>
           <el-col :span="9">
-              <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
+              <img :src="require('../../../icons/svg/'+svg+'.svg')">
           </el-col>
       </el-row>
   </div>
@@ -101,7 +101,5 @@ export default {
     height: 3.0vw;
     width: 16.0vw;
 }
-.svgIcon {
-    width: 6vw;
-}
+
 </style>

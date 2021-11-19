@@ -1,5 +1,5 @@
 <template>
-  <div id="infoContainer" class="infoContainer">
+  <div class="infoContainer">
     <transition name="fade">
       <div class="infPadding">
           <!-- 标题、声音icon -->
