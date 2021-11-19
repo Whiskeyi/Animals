@@ -17,7 +17,7 @@ export default new Vuex.Store({
     saveColor(state, color) {
       state.color = color
     },
-    saveIconNum(state, iconNum) {
+    saveColor(state, iconNum) {
       state.iconNum = iconNum
     }
   },

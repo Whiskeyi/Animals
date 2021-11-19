@@ -9,16 +9,16 @@
                     <!-- </el-collapse-item>
                 </el-collapse> -->
             </el-col>
-            <el-col :sm="12" :md="10" :lg="10">
+            <!-- <el-col :sm="12" :md="10" :lg="10">
                 <div class="getColor">
-                    <p>拾色：</p>
-                    <el-color-picker v-model="penColor" @change="setColor"></el-color-picker>
-                    <p>文件命名：</p>
+                    <!-- <p>拾色：</p>
+                    <el-color-picker v-model="penColor" @change="setColor"></el-color-picker> -->
+                    <!-- <p>文件命名：</p>
                     <input class="colorInput" v-model="fileName" placeholder="请输入图片名称">
-                    <button class="colorBtn" @click="savePic">保存</button>
+                    <button class="colorBtn" @click="savePic">保存</button> -->
                     <!-- <button class="btnReset" @click="reset">重置</button> -->
                 </div>
-            </el-col>
+            </el-col> -->
         </el-row>
     </div>
 </template>

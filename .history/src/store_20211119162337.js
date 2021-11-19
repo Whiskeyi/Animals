@@ -7,8 +7,8 @@ export default new Vuex.Store({
   state: {
     num: "",  // data.json数组号
     seconds: "8000", // 页面切换时间
-    color: "", // 画笔颜色
-    iconNum: "" // 右边icon序号
+    color: "",
+    iconNum: ""
   },
   mutations: {
     saveNum(state, num) {
@@ -17,10 +17,11 @@ export default new Vuex.Store({
     saveColor(state, color) {
       state.color = color
     },
-    saveIconNum(state, iconNum) {
+    saveColor(iconNum, iconNum) {
       state.iconNum = iconNum
     }
   },
   actions: {
+
   }
 })

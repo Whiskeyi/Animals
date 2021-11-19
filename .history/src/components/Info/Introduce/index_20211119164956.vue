@@ -103,6 +103,6 @@ export default {
 }
 .svgIcon {
     width: 8vw;
-    // color: red;
+    color: red;
 }
 </style>
