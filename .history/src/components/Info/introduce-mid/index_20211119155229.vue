@@ -43,13 +43,13 @@ export default {
     methods: {
         savePic() {
             // saveSvgAsPng.saveSvgAsPng(document.getElementById(this.animals[this.chooseIndex]),this.fileName);
-        }
-        // reset() {
-        //     let svg = $('path')
-        //     for(let i = 0;i < svg.length; i++){
-        //         svg[i].setAttribute('fill', "#000000")
-        //     }
-        // },
+        },
+        reset() {
+            let svg = $('path')
+            for(let i = 0;i < svg.length; i++){
+                svg[i].setAttribute('fill', "#000000")
+            }
+        },
     },
     // methods: {
     //     //   changeInfo() {

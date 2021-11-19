@@ -13,7 +13,7 @@
                 <source :src="mediaUrl" type="audio/mpeg">
               </audio>
           </el-col>
-          <el-col :span="8">
+          <el-col :span="9">
               <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
           </el-col>
       </el-row>

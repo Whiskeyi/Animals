@@ -9,14 +9,12 @@
                     <!-- </el-collapse-item>
                 </el-collapse> -->
             </el-col>
-            <el-col :sm="12" :md="10" :lg="10">
+            <el-col :span="8">
                 <div class="getColor">
                     <p>拾色：</p>
                     <el-color-picker v-model="penColor"></el-color-picker>
                     <p>文件命名：</p>
                     <input class="colorInput" v-model="fileName" placeholder="请输入图片名称">
-                    <button class="colorBtn" @click="savePic">保存</button>
-                    <!-- <button class="btnReset" @click="reset">重置</button> -->
                 </div>
             </el-col>
         </el-row>
@@ -24,8 +22,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
-import saveSvgAsPng from 'save-svg-as-png'
 const animalsData = require('@/data/Animals.json')
 import store from '../../../store'
 export default {
@@ -40,17 +36,6 @@ export default {
     //     this.changeInfo()
     //     // window.console.log(store.state.num)
     // },
-    methods: {
-        savePic() {
-            // saveSvgAsPng.saveSvgAsPng(document.getElementById(this.animals[this.chooseIndex]),this.fileName);
-        }
-        // reset() {
-        //     let svg = $('path')
-        //     for(let i = 0;i < svg.length; i++){
-        //         svg[i].setAttribute('fill', "#000000")
-        //     }
-        // },
-    },
     // methods: {
     //     //   changeInfo() {
     //     //     setInterval(function() {
@@ -75,11 +60,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@keyframes fadeOut
-{
-    0%  {opacity: 1;}
-    100%  {opacity: 0.5;}
-}
 // /deep/ .el-collapse-item__header {
 //     font-weight: bold;
 //     color: #fff;
@@ -118,38 +98,7 @@ export default {
     width: 5vw;
     height: 1.2vw;
     background-color: transparent;
-    border: 0;
-    color: white;
-    border-bottom: #fff 2px solid;
-    // border-radius: 2px;
-}
-input::-webkit-input-placeholder{
-    color:white;
-    font-size: 0.7vw;
-}
-input:focus {
-    border: 0;
-    outline: 0;
-    animation: fadeOut 0.8s ease;
-    animation-fill-mode:forwards;
-}
-.colorBtn {
-    margin: 0 15px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px white solid;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.75vw;
-}
-.btnReset {
-    margin: 0 5px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px white solid;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.75vw;
+    border: 0,0,5px,0;
 }
 // @media screen and (max-width: 1440px) { // 屏幕小于1440px样式
 //     #IntContent {

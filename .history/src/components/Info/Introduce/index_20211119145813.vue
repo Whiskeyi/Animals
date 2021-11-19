@@ -1,19 +1,19 @@
 <template>
   <div class="introduce">
       <el-row class="intContainer">
-          <el-col :span="6">
+          <el-col :span="5">
             <transition name="fade">
                 <div id="title" class="fadeIn">{{ name }}</div>
             </transition>
             <div id="subTitle">{{ enName }}</div>
           </el-col>
-          <el-col :span="10">
+          <el-col :span="11">
               <audio id="voice" controls class="logo">
                 <!-- <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image> -->
                 <source :src="mediaUrl" type="audio/mpeg">
               </audio>
           </el-col>
-          <el-col :span="8">
+          <el-col :span="9">
               <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
           </el-col>
       </el-row>
@@ -99,7 +99,7 @@ export default {
 .logo {
     padding-top: 3.4vw;
     height: 3.0vw;
-    width: 15.0vw;
+    width: 16.0vw;
 }
 .svgIcon {
     width: 6vw;

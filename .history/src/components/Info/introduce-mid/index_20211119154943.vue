@@ -9,14 +9,14 @@
                     <!-- </el-collapse-item>
                 </el-collapse> -->
             </el-col>
-            <el-col :sm="12" :md="10" :lg="10">
+            <el-col :sm="12" :md="10" :lg="9">
                 <div class="getColor">
                     <p>拾色：</p>
                     <el-color-picker v-model="penColor"></el-color-picker>
                     <p>文件命名：</p>
                     <input class="colorInput" v-model="fileName" placeholder="请输入图片名称">
                     <button class="colorBtn" @click="savePic">保存</button>
-                    <!-- <button class="btnReset" @click="reset">重置</button> -->
+                    <button class="colorBtn" @click="reset">重置</button>
                 </div>
             </el-col>
         </el-row>
@@ -44,12 +44,6 @@ export default {
         savePic() {
             // saveSvgAsPng.saveSvgAsPng(document.getElementById(this.animals[this.chooseIndex]),this.fileName);
         }
-        // reset() {
-        //     let svg = $('path')
-        //     for(let i = 0;i < svg.length; i++){
-        //         svg[i].setAttribute('fill', "#000000")
-        //     }
-        // },
     },
     // methods: {
     //     //   changeInfo() {
@@ -135,15 +129,6 @@ input:focus {
 }
 .colorBtn {
     margin: 0 15px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px white solid;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.75vw;
-}
-.btnReset {
-    margin: 0 5px;
     background-color: transparent;
     color: #fff;
     border: 2px white solid;

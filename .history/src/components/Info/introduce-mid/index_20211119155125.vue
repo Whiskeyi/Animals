@@ -16,7 +16,7 @@
                     <p>文件命名：</p>
                     <input class="colorInput" v-model="fileName" placeholder="请输入图片名称">
                     <button class="colorBtn" @click="savePic">保存</button>
-                    <!-- <button class="btnReset" @click="reset">重置</button> -->
+                    <button class="btnReset" @click="reset">重置</button>
                 </div>
             </el-col>
         </el-row>
@@ -43,13 +43,13 @@ export default {
     methods: {
         savePic() {
             // saveSvgAsPng.saveSvgAsPng(document.getElementById(this.animals[this.chooseIndex]),this.fileName);
-        }
-        // reset() {
-        //     let svg = $('path')
-        //     for(let i = 0;i < svg.length; i++){
-        //         svg[i].setAttribute('fill', "#000000")
-        //     }
-        // },
+        },
+        reset() {
+            let svg = $('path')
+            for(let i = 0;i < svg.length; i++){
+                svg[i].setAttribute('fill', "#000000")
+            }
+        },
     },
     // methods: {
     //     //   changeInfo() {
@@ -135,15 +135,6 @@ input:focus {
 }
 .colorBtn {
     margin: 0 15px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px white solid;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.75vw;
-}
-.btnReset {
-    margin: 0 5px;
     background-color: transparent;
     color: #fff;
     border: 2px white solid;
