@@ -5,7 +5,11 @@
         <div class="pro-card-wrapper">
           <div class="pro-card">
             <div class="pic">
-              <el-image class="logo" alt="logo" :src="require('../../icons/animals/'+imgs[(i - 1) * 3 + index].img+'.png')"></el-image>
+              <el-image
+                  class="logo"
+                  alt="logo"
+                  :src="require('../../icons/animals/'+imgs[(i - 1) * 3 + index].img+'.png')"
+              ></el-image>
             </div>
             <!-- <div>
               <div class="romaji">123</div>
@@ -33,7 +37,7 @@ export default {
   components: {
   },
   created() {
-    var imgs = [
+    let imgs = [
           {img: 'chicken'},
           {img: 'tiger'},
           {img: 'frog'},

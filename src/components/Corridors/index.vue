@@ -8,13 +8,13 @@
         @mousemove="move"
     >
       <div
-          v-for="i in lists"
+          v-for="(i, index) in lists"
           :key="i"
-          :class="setClass(i)"
+          :class="setClass()"
       >
-<!--        <el-image-->
-<!--            :src="getValue()"-->
-<!--        ></el-image>-->
+        <el-image
+            :src="require('../../data/img/'+imgs[index].img+'.png')"
+        ></el-image>
       </div>
     </div>
   </el-card>
@@ -36,7 +36,32 @@ export default {
       isMove: true, // 当前是否需要移动
 
       data: {},
-
+     imgs: [
+      {img: 'alligats-removebg-preview'},
+      {img: 'bats-removebg-preview'},
+      {img: 'beria-removebg-preview'},
+      {img: 'bird_044_1-removebg-preview'},
+      {img: 'canarys-removebg-preview'},
+      {img: 'chimps-removebg-preview'},
+      {img: 'clownfish-removebg-preview'},
+      {img: 'eagle01-removebg-preview'},
+      {img: 'elefant-removebg-preview'},
+      {img: 'goats-removebg-preview'},
+      {img: 'lions-removebg-preview'},
+      {img: 'malaysian_cobra-removebg-preview'},
+       {img: 'mandrel-removebg-preview'},
+       {img: 'porcupine-removebg-preview'},
+       {img: 'pu-removebg-preview'},
+       {img: 'rhino-removebg-preview'},
+       {img: 'sandcats-removebg-preview'},
+       {img: 'sharks-removebg-preview'},
+       {img: 'sharkss-removebg-preview'},
+       {img: 'stalion-removebg-preview'},
+       {img: 'tigers-removebg-preview'},
+       {img: 'Tortoise-removebg-preview'},
+       {img: 'Wolfs-removebg-preview'},
+       {img: 'zebras-removebg-preview'},
+    ]
     }
   },
   computed: {
@@ -79,7 +104,7 @@ export default {
       this.$refs.slider.scrollLeft = this.scrollLeft + 2;
       this.scrollLeft = this.scrollLeft + 2;
       if(this.scrollLeft >=  this.$refs.slider.scrollWidth - 1280-1000) {
-        this.scrollLeft = 600;
+        this.scrollLeft = 1200;
       }
     },
     play(ifMove) {
@@ -93,10 +118,10 @@ export default {
       console.log("nowTimer = ", this.timer);
     },
 
-    // getValue() {
-    //   const vo = this.data.AnimalsDetail;
-    //   return  vo[Math.floor((Math.random() * vo.length))].img;
-    // }
+    getValue() {
+      const vo = this.data.AnimalsDetail;
+      return  vo[Math.floor((Math.random() * vo.length))].img;
+    }
   },
 }
 </script>
@@ -184,7 +209,7 @@ el-card{
 }
 
 .item {
-  width:200px;
+  width:400px;
   height: calc(100% - 40px);
   display: inline-flex;
   align-items: center;
@@ -192,19 +217,20 @@ el-card{
   font-size: 80px;
   font-weight: 100;
   color:rgba(0,0,0,0.15);
+  border: 6px;
   box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
 }
 
-.item:nth-child(10n+1) { background: dodgerblue;}
-.item:nth-child(10n+2) { background: goldenrod;}
-.item:nth-child(10n+3) { background: paleturquoise;}
-.item:nth-child(10n+4) { background: gold;}
-.item:nth-child(10n+5) { background: cadetblue;}
-.item:nth-child(10n+6) { background: tomato;}
-.item:nth-child(10n+7) { background: lightcoral;}
-.item:nth-child(10n+8) { background: darkslateblue;}
-.item:nth-child(10n+9) { background: rebeccapurple;}
-.item:nth-child(10n+10) { background: #3BC1AC;}
+.item:nth-child(10n+1) { border-color: dodgerblue;}
+.item:nth-child(10n+2) { border-color: goldenrod;}
+.item:nth-child(10n+3) { border-color: paleturquoise;}
+.item:nth-child(10n+4) { border-color: gold;}
+.item:nth-child(10n+5) { border-color: cadetblue;}
+.item:nth-child(10n+6) { border-color: tomato;}
+.item:nth-child(10n+7) { border-color: lightcoral;}
+.item:nth-child(10n+8) { border-color: darkslateblue;}
+.item:nth-child(10n+9) { border-color: rebeccapurple;}
+.item:nth-child(10n+10) { border-color: #3BC1AC;}
 
 
 .item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
