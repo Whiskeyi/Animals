@@ -1,19 +1,18 @@
 ﻿<template>
   <div class="bg">
     <div class="gloss">
-      <Corridors/>
+      <Welcome/>
     </div>
   </div>
 </template>
 
 <script>
-import Corridors from '@/components/Corridors'
+import Welcome from '@/components/Welcome'
 
 export default {
-  name: 'Corridors',
+  name: 'WelcomePage',
   components: {
-
-    Corridors
+    Welcome
   }
 }
 </script>

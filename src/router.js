@@ -3,6 +3,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Corridors from './views/Corridors.vue'
+import WelcomePage from './views/WelcomePage.vue'
 
 
 Vue.use(Router)
@@ -13,6 +14,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'WelcomePage',
+      component: WelcomePage
+    },
+    {
+      path: '/home',
       name: 'home',
       component: Home
     },
