@@ -17,6 +17,13 @@
         ></el-image>
       </div>
     </div>
+    <el-button
+        class="button"
+        icon="el-icon-back"
+        circle
+        type="primary"
+        @click="backHomePage"
+    />
   </el-card>
 
 </template>
@@ -37,22 +44,22 @@ export default {
 
       data: {},
      imgs: [
-      {img: 'alligats-removebg-preview'},
-      {img: 'bats-removebg-preview'},
-      {img: 'beria-removebg-preview'},
-      {img: 'bird_044_1-removebg-preview'},
-      {img: 'canarys-removebg-preview'},
-      {img: 'chimps-removebg-preview'},
-      {img: 'clownfish-removebg-preview'},
-      {img: 'eagle01-removebg-preview'},
-      {img: 'elefant-removebg-preview'},
-      {img: 'goats-removebg-preview'},
-      {img: 'lions-removebg-preview'},
-      {img: 'malaysian_cobra-removebg-preview'},
-       {img: 'mandrel-removebg-preview'},
+       {img: 'alligats-removebg-preview'},
+       {img: 'bats-removebg-preview'},
+       {img: 'beria-removebg-preview'},
+       {img: 'bird_044_1-removebg-preview'},
+       {img: 'canarys-removebg-preview'},
+       {img: 'chimps-removebg-preview'},
+       {img: 'clownfish-removebg-preview'},
+       {img: 'eagle01-removebg-preview'},
+       {img: 'elefant-removebg-preview'},
+       {img: 'lions-removebg-preview'},
+       {img: 'goats-removebg-preview'},
+       {img: 'malaysian_cobra-removebg-preview'},
        {img: 'porcupine-removebg-preview'},
-       {img: 'pu-removebg-preview'},
+       {img: 'mandrel-removebg-preview'},
        {img: 'rhino-removebg-preview'},
+       {img: 'pu-removebg-preview'},
        {img: 'sandcats-removebg-preview'},
        {img: 'sharks-removebg-preview'},
        {img: 'sharkss-removebg-preview'},
@@ -121,6 +128,11 @@ export default {
     getValue() {
       const vo = this.data.AnimalsDetail;
       return  vo[Math.floor((Math.random() * vo.length))].img;
+    },
+    backHomePage() {
+      this.$router.push({
+        name: 'home'
+      })
     }
   },
 }
@@ -187,7 +199,8 @@ el-card{
 /*  100% {  left:100px}*/
 /*}*/
 
-/* 应用动画的元素 */
+ /*应用动画的元素*/
+
 /*.items {*/
 /*  animation-name: example;*/
 /*  animation-duration: 10s;*/
@@ -240,5 +253,10 @@ el-card{
   width: auto;
   border:2px solid green;
   height: 100%;
+}
+.button{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
 }
 </style>

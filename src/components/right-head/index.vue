@@ -8,11 +8,10 @@
       <h1 class="vertical">Animals——爱生万物</h1>
           </el-row>
           <el-row>
-      <!-- <div class="trans">
-        <el-switch v-model="switcher" active-color="#fafafa" @change="tranOn()"></el-switch>
-      </div> -->
+            <el-button type="text" @click="enterCorridors">动物画廊</el-button>
           </el-row>
       </el-col>
+
   </div>
 </template>
 
@@ -26,6 +25,12 @@ export default {
         }
     },
     methods: {
+
+      enterCorridors() {
+        this.$router.push({
+          name: 'CorridorsPage'
+        })
+      }
         // tranOn() {
         //     window.console.log(this.switcher)
         //     if(this.switcher == true) {
