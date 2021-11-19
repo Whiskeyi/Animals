@@ -21,5 +21,10 @@ export default new Router({
       name: 'corridors',
       component: Corridors
     }
+    // {
+    //   path: '/loading',
+    //   name: 'load',
+    //   component: () => import('@/views/Loading.vue')
+    // }
   ]
 })
