@@ -1,11 +1,12 @@
 <template>
   <div class="rightHeadContainer">
       <el-col :span="5">
+<!--          <el-row>-->
+<!--      <el-image class="logo" alt="logo" :src="require('@/icons/index.png')"></el-image>-->
+<!--          </el-row>-->
           <el-row>
-      <el-image class="logo" alt="logo" :src="require('@/icons/index.png')"></el-image>
-          </el-row>
-          <el-row>
-      <h1 class="vertical">Animals——爱生万物</h1>
+            <titlt-icon/>
+            <h1 class="vertical">Animals——爱生万物</h1>
           </el-row>
           <el-row>
             <el-button type="text" @click="enterCorridors">动物画廊</el-button>
@@ -18,12 +19,16 @@
 <script>
 // const animalsData = require('@/data/Animals.json')
 // import store from '../../store'
+import titltIcon from '../titleIcon/index'
 export default {
     data() {
         return {
             // switcher: true
         }
     },
+  components: {
+    titltIcon
+  },
     methods: {
 
       enterCorridors() {
