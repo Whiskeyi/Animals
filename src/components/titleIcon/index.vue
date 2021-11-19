@@ -34,13 +34,14 @@ export default {
   height: 200px;
   margin: 0rem;
   /* overflow: hidden; */
+  padding-bottom: 50px;
 }
 #jojo{
   margin: 0px auto;
   position: relative;
   height:200px;
   /* width:680px; */
-  width:200px;
+  width:100px;
   transform-origin:top;
   animation: jojogo 10s linear infinite;
 }
@@ -49,20 +50,14 @@ export default {
   100% {
     transform: translateX(0);
   }
-  23% {
-    transform: translateX(15vmax);
-  }
-  28% {
-    transform: rotateY(180deg) translateX(-60vmax);
-  }
   50% {
-    transform: rotateY(180deg) translateX(-20vmax);
+    transform: translateX(10vmax);
   }
-  63% {
-    transform: rotateY(180deg) translateX(20vmax);
+  52% {
+    transform: rotateY(180deg) translateX(-10vmax);
   }
-  67% {
-    transform: translateX(-65vmax);
+  99% {
+    transform: rotateY(180deg) translateX(0vmax);
   }
 }
 #jojo div{position:absolute;}
@@ -78,7 +73,7 @@ export default {
   border-bottom-right-radius:135px;
   /* top:117px; */
   bottom: 18px;
-  right:-230px;
+  right:10px;
 }
 .head::before {
   width: 10.8px;
@@ -102,7 +97,7 @@ export default {
   background-color:#404041;
   box-shadow: 9.6px 0 #404041;
   bottom: 65px;
-  left:410px;
+  left:70px;
 }
 .face::before{
   width:4px;
@@ -131,7 +126,7 @@ export default {
   background-color:#3F3856;
   border-radius:50%;
   bottom:0rem;
-  left:330px;
+  left:0px;
 }
 .back-paws::before{
   width:10.6px;
@@ -159,7 +154,7 @@ export default {
   border-bottom-left-radius:26.4px;
   background-image: linear-gradient(#F19D2C 26px, #D1733A 26px);
   bottom:18px;
-  left:343px;
+  left:4px;
 }
 .body::before{
   width:10px;
@@ -177,7 +172,7 @@ export default {
   height:21.2px;
   border-radius:12px;
   background-image: linear-gradient(#F19D2C 16px, white 16px);
-  left:354px;
+  left:14px;
   bottom:6px;
   transform-origin:top;
   animation: leftfoot 2s linear infinite;
@@ -187,7 +182,7 @@ export default {
   height:21.2px;
   border-radius:12px;
   background-image: linear-gradient(#F19D2C 16px, white 16px);
-  left:397px;
+  left:59px;
   bottom:6px;
   transform-origin:top;
   animation: leftfoot 2s linear infinite;
@@ -224,7 +219,7 @@ export default {
   background-color:#c97c47;
   border-top-right-radius: 11.6px;
   box-shadow: 0rem -1.6px 0 1.6px #F19D2C;
-  left:400px;
+  left:61px;
   bottom: -127px;
 }
 .ears::after{
@@ -233,7 +228,7 @@ export default {
   background-color:#c97c47;
   border-top-left-radius: 11.6px;
   box-shadow: 0rem -1.6px 0 1.6px #F19D2C;
-  left:421px;
+  left:81px;
   bottom: -127px;
 }
 
@@ -246,7 +241,7 @@ export default {
   6.6px 14px #F19D2C,
   6px 16.8px #F19D2C;
   bottom:58px;
-  left:394px;
+  left:55px;
 }
 .fur::before{
   width:8px;

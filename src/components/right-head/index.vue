@@ -9,7 +9,12 @@
             <h1 class="vertical">Animals——爱生万物</h1>
           </el-row>
           <el-row>
-            <el-button type="text" @click="enterCorridors">动物画廊</el-button>
+            <el-button
+                type="warning"
+                round
+                @click="enterCorridors"
+                class="button"
+            >动物画廊</el-button>
           </el-row>
       </el-col>
 
@@ -66,6 +71,10 @@ export default {
     width: 5vw;
     // width: 90px;
     padding-bottom: 20px;
+}
+
+.button{
+  margin-top: 100px;
 }
 // .trans {
 //     margin-top: 200%;
