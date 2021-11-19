@@ -45,8 +45,8 @@ export default {
     //         }, store.state.seconds);
     //     }
     // },
-    destroyed() {
-         document.getElementById("voice").load(); // audio load
+    mounted() {
+         
     },
     computed: {
         nameChange() {

@@ -45,7 +45,7 @@ export default {
     //         }, store.state.seconds);
     //     }
     // },
-    destroyed() {
+    mounted() {
          document.getElementById("voice").load(); // audio load
     },
     computed: {
@@ -61,7 +61,6 @@ export default {
             //  document.getElementById('subTitle').innerHTML = this.enName
              this.mediaUrl = animalsData.AnimalsDetail[store.state.num].voice
             //  window.console.log(this.mediaUrl)
-            document.getElementById("voice").load(); // audio load
         }
     }
 }
