@@ -1,7 +1,7 @@
 <template>
   <div class="introduce">
       <el-row class="intContainer">
-          <el-col :span="5">
+          <el-col :span="4">
             <transition name="fade">
                 <div id="title" class="fadeIn">{{ name }}</div>
             </transition>

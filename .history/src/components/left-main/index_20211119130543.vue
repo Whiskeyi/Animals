@@ -28,8 +28,7 @@ export default {
     return {
       data: {},
       dataLength: '',
-      imgs: [],
-      valid: false
+      imgs: []
     }
   },
   components: {
@@ -82,20 +81,17 @@ export default {
             store.commit('saveNum',num)
             document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
         }, store.state.seconds);
-        // window.console.log('throttle') // 测试节流
       },
       // 节流throttle 处理频繁点击click事件
       throttle(fn, delay) {
+          let valid = false
           return function() {
-            this.valid = false
-            clearTimeout(this.throttle)
-            this.throttle = setTimeout(() => {
+            setTimeout(() => {
               fn()
-              this.valid = true;
+              valid = true;
             }, delay)
-          }
+        }
       }
-  }
 }
 </script>
 

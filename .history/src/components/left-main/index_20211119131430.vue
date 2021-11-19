@@ -82,7 +82,6 @@ export default {
             store.commit('saveNum',num)
             document.getElementById('bg').style.backgroundColor = animalsData.AnimalsDetail[num].color
         }, store.state.seconds);
-        // window.console.log('throttle') // 测试节流
       },
       // 节流throttle 处理频繁点击click事件
       throttle(fn, delay) {
