@@ -45,9 +45,6 @@ export default {
     //         }, store.state.seconds);
     //     }
     // },
-    destroyed() {
-         document.getElementById("voice").load(); // audio load
-    },
     computed: {
         nameChange() {
             return store.state.num
@@ -60,8 +57,8 @@ export default {
              this.enName = animalsData.AnimalsDetail[store.state.num].enName
             //  document.getElementById('subTitle').innerHTML = this.enName
              this.mediaUrl = animalsData.AnimalsDetail[store.state.num].voice
-            //  window.console.log(this.mediaUrl)
-            document.getElementById("voice").load(); // audio load
+             document.getElementById("video1").load();
+             window.console.log(this.mediaUrl)
         }
     }
 }

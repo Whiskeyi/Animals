@@ -8,9 +8,9 @@
             <div id="subTitle">{{ enName }}</div>
           </el-col>
           <el-col :span="10">
-              <audio id="voice" controls class="logo">
-                <!-- <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image> -->
-                <source :src="mediaUrl" type="audio/mpeg">
+              <audio controls>
+                <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image>
+                <source class="logo" src="http://www.laufis.de/laute/ente_u_erpel-01.mp3" type="audio/mpeg">
               </audio>
           </el-col>
       </el-row>
@@ -25,8 +25,7 @@ export default {
         return {
             name: '鸡',
             enName: 'Chicken',
-            show: '1',
-            mediaUrl: 'http://mrclan.com/fastdl/tfc/sound/chick.wav'
+            show: '1'
         }
     },
     // mounted() {
@@ -45,9 +44,6 @@ export default {
     //         }, store.state.seconds);
     //     }
     // },
-    destroyed() {
-         document.getElementById("voice").load(); // audio load
-    },
     computed: {
         nameChange() {
             return store.state.num
@@ -56,12 +52,9 @@ export default {
     watch: {
         nameChange: function() {
              this.name = animalsData.AnimalsDetail[store.state.num].name
-            //  document.getElementById('title').innerHTML = this.name
+             document.getElementById('title').innerHTML = this.name
              this.enName = animalsData.AnimalsDetail[store.state.num].enName
-            //  document.getElementById('subTitle').innerHTML = this.enName
-             this.mediaUrl = animalsData.AnimalsDetail[store.state.num].voice
-            //  window.console.log(this.mediaUrl)
-            document.getElementById("voice").load(); // audio load
+             document.getElementById('subTitle').innerHTML = this.enName
         }
     }
 }
@@ -94,7 +87,7 @@ export default {
 .logo {
     padding-top: 3.4vw;
     height: 3.0vw;
-    width: 16.0vw;
+    width: 3.0vw;
 }
 
 </style>

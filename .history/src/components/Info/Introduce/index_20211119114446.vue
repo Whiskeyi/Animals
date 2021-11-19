@@ -8,7 +8,7 @@
             <div id="subTitle">{{ enName }}</div>
           </el-col>
           <el-col :span="10">
-              <audio id="voice" controls class="logo">
+              <audio controls class="logo">
                 <!-- <el-image class="logo" alt="logo" :src="require('@/icons/voice.png')"></el-image> -->
                 <source :src="mediaUrl" type="audio/mpeg">
               </audio>
@@ -45,9 +45,6 @@ export default {
     //         }, store.state.seconds);
     //     }
     // },
-    destroyed() {
-         document.getElementById("voice").load(); // audio load
-    },
     computed: {
         nameChange() {
             return store.state.num
@@ -58,10 +55,8 @@ export default {
              this.name = animalsData.AnimalsDetail[store.state.num].name
             //  document.getElementById('title').innerHTML = this.name
              this.enName = animalsData.AnimalsDetail[store.state.num].enName
-            //  document.getElementById('subTitle').innerHTML = this.enName
+             document.getElementById('subTitle').innerHTML = this.enName
              this.mediaUrl = animalsData.AnimalsDetail[store.state.num].voice
-            //  window.console.log(this.mediaUrl)
-            document.getElementById("voice").load(); // audio load
         }
     }
 }
