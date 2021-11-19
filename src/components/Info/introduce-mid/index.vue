@@ -9,23 +9,22 @@
                     <!-- </el-collapse-item>
                 </el-collapse> -->
             </el-col>
-            <el-col :sm="12" :md="10" :lg="10">
+            <!-- <el-col :sm="12" :md="10" :lg="10">
                 <div class="getColor">
                     <p>拾色：</p>
                     <el-color-picker v-model="penColor"></el-color-picker>
                     <p>文件命名：</p>
                     <input class="colorInput" v-model="fileName" placeholder="请输入图片名称">
                     <button class="colorBtn" @click="savePic">保存</button>
-                    <!-- <button class="btnReset" @click="reset">重置</button> -->
+                    <button class="btnReset" @click="reset">重置</button> 
                 </div>
-            </el-col>
+            </el-col> -->
         </el-row>
     </div>
 </template>
 
 <script>
-import $ from 'jquery'
-import saveSvgAsPng from 'save-svg-as-png'
+
 const animalsData = require('@/data/Animals.json')
 import store from '../../../store'
 export default {
@@ -133,15 +132,15 @@ input:focus {
     animation: fadeOut 0.8s ease;
     animation-fill-mode:forwards;
 }
-.colorBtn {
-    margin: 0 15px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px white solid;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.75vw;
-}
+// .colorBtn {
+//     margin: 0 15px;
+//     background-color: transparent;
+//     color: #fff;
+//     border: 2px white solid;
+//     cursor: pointer;
+//     border-radius: 5px;
+//     font-size: 0.75vw;
+// }
 .btnReset {
     margin: 0 5px;
     background-color: transparent;

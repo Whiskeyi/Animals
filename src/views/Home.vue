@@ -6,14 +6,15 @@
     <div class="container">
       <!-- 左侧展示模块 -->
       <div id="leftContainer">
-        <LeftMain></LeftMain>
+        <LeftMain @drawPreEvent="tellIndex"></LeftMain>
       </div>
       <!-- 右侧展示模块 -->
       <div id="rightContainer">
         <!-- 输出信息 -->
-          <Info></Info>
+          <Info @changeEvent="pig"></Info>
           <!-- 右侧标题 -->
-          <RightHead></RightHead>
+          <RightHead v-if="show"></RightHead>
+          <RightDraw :chooseIndex="index" v-else></RightDraw>
           <!-- 尾部 -->
           <Footer></Footer>
       </div>
@@ -27,13 +28,29 @@
 import Gloss from '@/components/Gloss'
 import Footer from '@/components/Footer'
 import Info from '@/components/Info'
+import RightDraw from '@/components/right-draw'
 import RightHead from '@/components/right-head'
 import LeftMain from '@/components/left-main'
 
 export default {
   name: 'home',
   components: {
-    Gloss,Footer,Info,RightHead,LeftMain
+    Gloss,Footer,Info,RightDraw,RightHead,LeftMain
+  },
+  data(){
+    return{
+      show:true,
+      index:-1
+    }
+  },
+  methods:{
+    pig(){
+      this.show = !this.show;
+    },
+    tellIndex(index){
+      this.index = index;
+      console.log("点击的序号",this.index)
+    }
   }
 }
 </script>
@@ -41,8 +58,8 @@ export default {
 <style lang="scss" scoped>
 #leftContainer {
   position: absolute;
-  left: 18%;
-  width: 22%;
+  left: 10%;
+  width: 25%;
   height: 100%;
   margin: 0 auto;
 }
@@ -72,15 +89,15 @@ export default {
 @media screen and (min-width: 960px) and (max-width:1440px) { // 屏幕大于等于960px小于1440px样式
   #leftContainer {
     position: absolute;
-    left: 11%;
-    width: 27%;
+    left: 5%;
+    width: 30%;
     height: 100%;
     margin: 0 auto;
   }
   #rightContainer {
     position: fixed;
-    right: 0%;
-    width: 62%;
+    right: 2%;
+    width: 63%;
     height: 100%;
     margin: 0 auto;
   }
@@ -88,15 +105,15 @@ export default {
 @media screen and (min-width: 1440px) and (max-width: 1920px) { // 屏幕大于等于1440px小于1920px样式
  #leftContainer {
     position: absolute;
-    left: 8%;
-    width: 33%;
+    left: 2%;
+    width: 30%;
     height: 100%;
     margin: 0 auto;
   }
   #rightContainer {
     position: fixed;
     right: 5%;
-    width: 54%;
+    width: 65%;
     height: 100%;
     margin: 0 auto;
   }

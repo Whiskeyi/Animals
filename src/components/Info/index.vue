@@ -1,9 +1,9 @@
 <template>
-  <div id="infoContainer" class="infoContainer">
+  <div class="infoContainer">
     <transition name="fade">
       <div class="infPadding">
           <!-- 标题、声音icon -->
-        <Introduce></Introduce>
+        <Introduce @drawevent="changeRight"></Introduce>
         <!-- 简介 -->
         <IntroduceMid></IntroduceMid>
         <!-- 捕食、诗 -->
@@ -21,35 +21,28 @@ export default {
   name: 'Info',
   components: {
     Introduce, HabbitPoem, IntroduceMid
+  },
+  methods:{
+    changeRight(){
+      this.$emit('changeEvent',1)
+    }
   }
 }
 </script>
-<style lang="scss">
+
+<style lang="scss" scoped>
+@import '../../styles/transition.scss';
 .infoContainer {
     float: left;
     z-index: 10000;
-    width: 82%;
+    width: 70%;
     height: 80%;
     margin: 26px 0 0 16px;
     padding: 15px 0px;
     color:#fff;
-    animation: fadeIn 5s ease;
 }
-@media screen and (max-width: 1280px) { // 屏幕<1280px样式
-  .infoContainer {
-    float: left;
-    z-index: 10000;
-    width: 65%;
-    height: 80%;
-    margin: 26px 0 0 16px;
-    animation: fadeIn 5s ease;
-  }
-}
-</style>
-<style lang="scss" scoped>
-
 .infPadding {
-  padding: 0 0 0 50px;
+  padding: 0 0 0 60px;
 }
 .infoContainer logo {
     position: absolute;
@@ -72,5 +65,13 @@ export default {
 //     margin: 26px 0 0 16px;
 //   }
 // }
-
+@media screen and (max-width: 1280px) { // 屏幕<1280px样式
+  .infoContainer {
+    float: left;
+    z-index: 10000;
+    width: 65%;
+    height: 80%;
+    margin: 26px 0 0 16px;
+  }
+}
 </style>
