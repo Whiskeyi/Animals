@@ -1,7 +1,7 @@
 <template>
   <div class="introduce">
       <el-row class="intContainer">
-          <el-col :span="5">
+          <el-col :span="6">
             <transition name="fade">
                 <div id="title" class="fadeIn">{{ name }}</div>
             </transition>
@@ -13,8 +13,9 @@
                 <source :src="mediaUrl" type="audio/mpeg">
               </audio>
           </el-col>
-          <el-col :span="9">
-              <img class="svgIcon" :src="require('../../../icons/svg/'+svg+'.svg')">
+          <el-col :span="8">
+              <el-image v-if="show" class="pic-logo" alt="draw" :src="require('@/icons/draw.png')" @click="drawPic"></el-image>
+              <el-image v-else class="pic-logo" alt="draw1" :src="require('@/icons/draw1.png')" @click="drawPic"></el-image>
           </el-col>
       </el-row>
   </div>
@@ -30,7 +31,12 @@ export default {
             enName: 'Chicken',
             show: '1',
             mediaUrl: 'http://mrclan.com/fastdl/tfc/sound/chick.wav',
-            svg: 'Bear'
+        }
+    },
+    methods:{
+        drawPic(){
+            this.$emit('drawevent',1)
+            this.show=!this.show
         }
     },
     // mounted() {
@@ -99,9 +105,14 @@ export default {
 .logo {
     padding-top: 3.4vw;
     height: 3.0vw;
-    width: 16.0vw;
+    width: 15.0vw;
 }
-.svgIcon {
-    width: 6vw;
+.pic-logo{
+    padding-top: 2vw;
+    padding-left: 1vw;
+    height: 3.1vw;
+    width: 3.1vw;
+    margin: 1.5vw;
 }
+
 </style>
